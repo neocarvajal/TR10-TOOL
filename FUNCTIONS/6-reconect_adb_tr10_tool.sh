@@ -21,7 +21,7 @@ function reconect_adb_tr10_tool() {
         echo " "
         echo "y la activación de la depuración USB "
         echo " "
-        echo "Iniciando autodetección Nº $reconexión.."
+        echo "Iniciando autodetección Nº $reconexion.."
         echo " "            
         adb wait-for-device
         echo " "      
