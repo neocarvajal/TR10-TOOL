@@ -53,14 +53,14 @@ echo " "
 $ADB start-server
 
 # Cargando librerias TR10-TOOL --------------------------------------
-. 0-main_menu.sh
-. 1-temp_recovery_root_gapps.sh
-. 2-reboot_temp_recovery.sh
-. 3-reboot_droidboot.sh
-. 4-reboot_recovery.sh
-. 5-enter_shell.sh
-. 6-reconect_adb_tr10_tool.sh
-. 7-conections_tr10_tool.sh
+. FUNCTIONS/0-main_menu.sh
+. FUNCTIONS/1-temp_recovery_root_gapps.sh
+. FUNCTIONS/2-reboot_temp_recovery.sh
+. FUNCTIONS/3-reboot_droidboot.sh
+. FUNCTIONS/4-reboot_recovery.sh
+. FUNCTIONS/5-enter_shell.sh
+. FUNCTIONS/6-reconect_adb_tr10_tool.sh
+. FUNCTIONS/7-conections_tr10_tool.sh
 # Aviso -------------------------------------------------------------
 echo " "
 echo "##################################################"
