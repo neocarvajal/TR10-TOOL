@@ -1,61 +1,36 @@
-# tr10_tool
-TR10CS1 and TR10RS1 Root + Gapps and Temp-Custom Recovery Tools
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TR10 TOOL 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Bash Script For TR10CS1/TR10RS1 Intel Atom x86 ( Root + Gapps and Temp-Custom Recovery Tools) 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Pasos para utilizar la herramienta : 
+#Advertencia
+___________
 
-1 - Desscargar el zip de la repo tr10-tools y descomprimir
+Esta herramienta fue desarrollada con fines educativos, cada persona es responsable del uso y de posibles daños ocasionados a los equipos con que sea probado el Script!
+Información
 
-2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio 
+Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
 
-<<<<<<< HEAD
-Link descarga GAPPS : http://opengapps.org/ Versión recomendada (Android x86 4.4 / Cualquier variante)
-=======
-Link descarga GAPPS : Subiendo ...
->>>>>>> 044b07e5c63d601b25dbd1bccc691325c3928a4d
+# Pasos para utilizar la herramienta
+1 - Descargar el zip/tar.gz de la repo y descomprimir.
+
+2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante)
 
 3 - Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso).
 
 4 - Ejecutar el script TR10-TOOL.sh de la siguiente manera : ./TR10-TOOL.sh
 
-5 - Mientrar no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero)
+5 - Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero).
 
-Video guía : https://www.youtube.com/watch?v=Cm7QASoZeWk
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Video Guía
+https://www.youtube.com/watch?v=Cm7QASoZeWk
 
-Desarrollo :
+#Desarrollador
+T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russiían". Usuario Gnu/Linux desde 2009.
 
-Propongo llevar el script a otro nivel (con interfaz gráfica). 
+# Meta
+Crear una herramienta con más opciones y mucho más universal como si se tratara de una Suite tipo (kies) que permita gestionar el dispositivo facilmente en tareas comunes(respaldos, copiar archivos entre un pc y el dispositivo entre otros), manteniendo las opciones "avanzadas" como flashear Cunstom Recovery.
 
-Por la facilidad de llevar lo ya trabajado a algo grafico, Zenity seria lo indicado para empezar: https://help.gnome.org/users/zenity/stable/index.html.es
-
-<<<<<<< HEAD
-META :
-
-Crear una herramienta más universal y no solo sea utilizada con los dispositivos 
-
-TR10CS1 y TR10RS1 por supuesto con más herramientas al estilo Suite que permita
-
-realizar respaldos, copiar archivos entre un pc y el dispositivo (tareas comunes de un usuario final)
-=======
-META: Crear una herramienta que sea más universal y no solo sea utilizada con los dispositivos 
-
-TR10CS1 y TR10RS1 por supuesto con más herramientas como si se tratara de una Suite tipo (kies) que permita
-
-realizar respaldos, copiar archivos entre un pc y el dispositivo entre otros ...
->>>>>>> 044b07e5c63d601b25dbd1bccc691325c3928a4d
-
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-Para discuciones en cuanto al desarrollo y mejoras del script se utilizara el foro : http://tabletcanaima.com.ve
-
-Adicionalmente pueden contactarme de la siguiente manera :
-
-#Twitter - @neocarvajal
-
-Email - neocarvajal12@gmail.com 
-
-
-
-
+# Soporte/Contacto
+Para discuciones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
 
