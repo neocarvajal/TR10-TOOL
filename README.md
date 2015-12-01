@@ -6,15 +6,14 @@ Bash Script For TR10CS1/TR10RS1 Intel Atom x86 ( Root + Gapps and Temp-Custom Re
 #Advertencia
 ___________
 
-Esta herramienta fue desarrollada con fines educativos, cada persona es responsable del uso y de posibles daños ocasionados a los equipos con que sea probado el Script!
-Información
+Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
 Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
 
 # Pasos para utilizar la herramienta
 1 - Descargar el zip/tar.gz de la repo y descomprimir.
 
-2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante)
+2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante).
 
 3 - Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso).
 
