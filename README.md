@@ -8,7 +8,11 @@ Pasos para utilizar la herramienta :
 
 2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio 
 
+<<<<<<< HEAD
 Link descarga GAPPS : http://opengapps.org/ Versión recomendada (Android x86 4.4 / Cualquier variante)
+=======
+Link descarga GAPPS : Subiendo ...
+>>>>>>> 044b07e5c63d601b25dbd1bccc691325c3928a4d
 
 3 - Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso).
 
@@ -25,6 +29,7 @@ Propongo llevar el script a otro nivel (con interfaz gráfica).
 
 Por la facilidad de llevar lo ya trabajado a algo grafico, Zenity seria lo indicado para empezar: https://help.gnome.org/users/zenity/stable/index.html.es
 
+<<<<<<< HEAD
 META :
 
 Crear una herramienta más universal y no solo sea utilizada con los dispositivos 
@@ -32,6 +37,13 @@ Crear una herramienta más universal y no solo sea utilizada con los dispositivo
 TR10CS1 y TR10RS1 por supuesto con más herramientas al estilo Suite que permita
 
 realizar respaldos, copiar archivos entre un pc y el dispositivo (tareas comunes de un usuario final)
+=======
+META: Crear una herramienta que sea más universal y no solo sea utilizada con los dispositivos 
+
+TR10CS1 y TR10RS1 por supuesto con más herramientas como si se tratara de una Suite tipo (kies) que permita
+
+realizar respaldos, copiar archivos entre un pc y el dispositivo entre otros ...
+>>>>>>> 044b07e5c63d601b25dbd1bccc691325c3928a4d
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
