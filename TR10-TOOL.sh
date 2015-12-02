@@ -34,7 +34,7 @@ printf "
 # Alerta TR10-TOOL ------------------------------------------------
 echo " "
 echo "##################################################"
-echo "                  TR10-TOOL			            "
+echo "                  TR10-TOOL                       "
 echo "#                                                #"
 echo "# Antes de empezar a trabajar con tu dispositivo #"
 echo "#                                                #"
