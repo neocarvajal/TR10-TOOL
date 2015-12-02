@@ -14,7 +14,7 @@
 # Variables SDK android-linux -------------------------------------
 DIR=$(pwd)
 ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
-FASTBOOT="${DIR}/ANDROID-SDK-LINUX/.fastboot"
+FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
 
 clear
 # Cerrando servidor ADB--------------------------------------------
