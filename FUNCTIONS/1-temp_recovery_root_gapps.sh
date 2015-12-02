@@ -42,7 +42,7 @@ function temp_recovery_root_gapps() {
         echo " "
 
         if [ $opcion -eq 1 ]; then
-
+            echo " "
             read -t 1 -p "Ha seleccionado TWRP como recovery temporal!"         
             echo " "
             echo "Entrando en el directorio SUPER_SU"
