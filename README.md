@@ -45,7 +45,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 
 	2 -	Entrar en Configuración/Menú desarrollador/Depuración USB.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
-	![alt text](http://i.imgur.com/En9p3RI.p)
+	![alt text](http://i.imgur.com/En9p3RI.png)
 
 -----------------------------------------------------------------------------------------------
 
