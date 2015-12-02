@@ -4,6 +4,8 @@ Bash Script For TR10CS1/TR10RS1 Intel Atom x86 ( Root + Gapps and Temp-Custom Re
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Advertencia
+-------------
+-------------
 Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
 # Información
