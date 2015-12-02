@@ -13,6 +13,9 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function temp_recovery_root_gapps() {
+
+    ESTADO=`$ADB get-state`
+    CONECTADO="device"
 	
 	clear   
     # Info Dispositivo  -------------------------------------------------
