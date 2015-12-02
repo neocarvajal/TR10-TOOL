@@ -4,8 +4,6 @@ Bash Script For TR10CS1/TR10RS1 Intel Atom x86 ( Root + Gapps and Temp-Custom Re
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Advertencia
-___________
-
 Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
 Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
@@ -13,11 +11,11 @@ Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versió
 # Pasos para utilizar la herramienta	
 Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no reconozca de buenas a primeras tu dispositivo y por tal razón sea imposible que pueda comunicarse con el vía adb o fastboot. Si este es tu caso tendrás que hacer ciertas cosas antes de empezar a utilizar esta herramienta (Si este no es tu caso ve directo a Preparando el dispositivo).
 
-## Preparando el sistema :	
+## Preparando el sistema:	
 
-Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir :
+Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir:
 
-	1 - Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root :
+	1 - Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
 		![texto cualquiera por si no carga la imagen](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png)		
 
     2 - Listar los dispositivos conectados via USB y copiar el vendor_id 
