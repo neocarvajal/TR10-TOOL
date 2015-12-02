@@ -18,7 +18,7 @@ Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no rec
 Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir :
 
 	1 - Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root :
-		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
+		![TerminalRoot](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png)		
 
     2 - Listar los dispositivos conectados via USB y copiar el vendor_id 
   		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
