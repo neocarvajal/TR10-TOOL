@@ -36,18 +36,14 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
 	5 - En el terminal reinicia el servicio udev :
-
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo :	
 	
-	1 - Activando el Menú desarrollador o del Programador:	
-	
-	Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
+	1 - Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
-	2 - Activando la depuración USB:
-	Entrar en Configuración/Menú desarrollador/Depuración USB.	
+	2 -	Entrar en Configuración/Menú desarrollador/Depuración USB.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 
 -----------------------------------------------------------------------------------------------
