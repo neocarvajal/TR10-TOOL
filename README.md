@@ -22,7 +22,7 @@ A)
 
 		- Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root :
 
-			https://github.com/neocarvajal/TR10-TOOL/blob/master/IMAGES/1.png
+			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
 		
 		- Listar los dispositivos conectados via USB y copiar el vendor_id 
 		  (podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
