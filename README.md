@@ -26,11 +26,14 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	3 - Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al siguiente paso).
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
-	4 - Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules) 	copia y pega esta cadena en el archivo :
+	4 - Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules).
+		Copia y pega esta cadena en el archivo :
 	
 		SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
-  		En el mismo orden que aparece el ID del dispositivo en el segundo paso, reemplazalos en esta cadena en el mismo orden y guarda los cambios. En este caso seria:
+  		En el mismo orden que aparece el ID del dispositivo en el segundo paso, 
+  		reemplazalos en esta cadena en el mismo orden y guarda los cambios.
+  		En este caso seria:
 
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
