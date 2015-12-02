@@ -50,7 +50,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 -----------------------------------------------------------------------------------------------
 
-#Configurando TR10-TOOL
+# Configurando TR10-TOOL
 1 - Descargar el zip/tar.gz de la repo y descomprimir.
 
 2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante).
@@ -64,7 +64,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 # Video Guía
 https://www.youtube.com/watch?v=Cm7QASoZeWk
 
-#Desarrollador
+# Desarrollador
 T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russiían". Usuario Gnu/Linux desde 2009.
 
 # Meta
