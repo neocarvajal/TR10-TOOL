@@ -3,63 +3,53 @@
 Bash Script For TR10CS1/TR10RS1 Intel Atom x86 ( Root + Gapps and Temp-Custom Recovery Tools) 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#Advertencia
+# Advertencia
 ___________
 
 Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
 Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
 
-#Pasos para utilizar la herramienta	
+# Pasos para utilizar la herramienta	
 Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no reconozca de buenas a primeras tu dispositivo y por tal razón sea imposible que pueda comunicarse con el vía adb o fastboot. Si este es tu caso tendrás que hacer ciertas cosas antes de empezar a utilizar esta herramienta (Si este no es tu caso ve directo a Preparando el dispositivo).
 
-	Preparando el sistema :
-	-----------------------
+## Preparando el sistema :	
 
-	Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir :
+Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir :
 
-		- Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root :
+	1 - Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root :
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
 
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
-		
-		- Listar los dispositivos conectados via USB y copiar el vendor_id 
-		  (podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
+    2 - Listar los dispositivos conectados via USB y copiar el vendor_id 
+  		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
 
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
-
-
-		- Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al siguiente paso).
-
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
+	3 - Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al 			siguiente paso).
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
 
-		- Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
+	4 - Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules) 	copia y pega esta cadena en el archivo :
+	
+	SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
-			copia y pega esta cadena en el archivo :
+  	En el mismo orden que aparece el ID del dispositivo en el segundo paso, reemplazalos en esta cadena en el mismo orden y guarda los cambios. En este caso seria:
 
-			SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
-		  En el mismo orden que aparece el ID del dispositivo en el segundo paso, reemplazalos en esta cadena en el mismo orden y guarda los cambios. En este caso seria:
+	5 - En el terminal reinicia el servicio udev :
 
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
-  		- En el terminal reinicia el servicio udev :
+## Preparando el dispositivo :	
+	
+	1 - Activando el Menú desarrollador o del Programador:	
+	
+	Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
-
-	Preparando el dispositivo :	
-	--------------------------
-		- Activando el Menú desarrollador o del Programador:
-			
-			Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
-
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
-
-		- Activando la depuración USB:
-
-			Entrar en Configuración/Menú desarrollador/Depuración USB.
-			
-			https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
+	2 - Activando la depuración USB:
+	Entrar en Configuración/Menú desarrollador/Depuración USB.	
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 
 -----------------------------------------------------------------------------------------------
 
