@@ -11,10 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function enter_shell() {
-    
-    ESTADO=`$ADB get-state`
-    CONECTADO="device"
-	
+. conections_tr10_tool.Shell   # Variables globales	
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "

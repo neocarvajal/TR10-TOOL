@@ -11,10 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_native_recovery() {	
-	
-	ESTADO=`$ADB get-state`
-	CONECTADO="device"
-
+. conections_tr10_tool.sh	# Variables globales
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "

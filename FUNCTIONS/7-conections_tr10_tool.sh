@@ -1,5 +1,5 @@
 #!/bin/bash
-# temp_recovery_root_gapps.sh
+#  conections_tr10_tool.sh
 #
 # Función que permite definir las conexiones para la comunicación con los protocolos ADB y FASTBOOT
 #
