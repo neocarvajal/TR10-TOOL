@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_droidboot() {	
-. conections_tr10_tool.sh	# Variables globales
+conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -92,7 +92,7 @@ function reboot_droidboot() {
 	    	echo "Regresando al Menú principal ..."
         fi
     else
-    	reconect_$ADB_tr10_tool
+    	reconect_adb_tr10_tool
     	main_menu
    	fi
 }

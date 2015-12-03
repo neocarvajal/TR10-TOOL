@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function enter_shell() {
-. conections_tr10_tool.Shell   # Variables globales	
+conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -48,7 +48,7 @@ function enter_shell() {
 	    	echo "Regresando al Menú principal"
 	    fi
     else
-     	reconect_$ADB_tr10_tool
+     	reconect_adb_tr10_tool
      	main_menu
     fi
 }

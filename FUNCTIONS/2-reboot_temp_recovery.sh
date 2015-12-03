@@ -13,7 +13,7 @@
 #
 
 function reboot_temp_recovery() {
-. conections_tr10_tool.sh   # Variables globales
+conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -50,7 +50,7 @@ function reboot_temp_recovery() {
             echo " "
             $ADB reboot-bootloader && $FASTBOOT getvar all
             echo " "
-        	read -t 6 -p "Flash TWRP on /tmp/recovery.zip -- No toque el dispositivo"
+        	read -t 5 -p "Flash TWRP on /tmp/recovery.zip -- No toque el dispositivo"
             echo " "
         	$FASTBOOT flash /tmp/recovery.zip twrp_canaima.zip
             echo " "
@@ -86,7 +86,7 @@ function reboot_temp_recovery() {
             echo " "
             $ADB reboot-bootloader && $FASTBOOT getvar all            
             echo " "
-            read -t 6 -p "Flash CWM on /tmp/recovery.zip -- No toque el dispositivo"
+            read -t 5 -p "Flash CWM on /tmp/recovery.zip -- No toque el dispositivo"
             echo " "
             $FASTBOOT flash /tmp/recovery.zip cwm_canaima.zip
             echo " "
@@ -126,7 +126,7 @@ function reboot_temp_recovery() {
              echo "Regresando al menu principal"
         fi       
     else
-    	reconect_$ADB_tr10_tool	
+    	reconect_adb_tr10_tool	
         reboot_temp_recovery
     fi
 }

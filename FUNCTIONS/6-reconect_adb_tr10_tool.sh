@@ -12,7 +12,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reconect_adb_tr10_tool() {	
-. conections_tr10_tool.sh   # Variables globales
+conections_tr10_tool
     while [ $RECONEXION -ne 4 ]; do            
         echo " "
         echo "Imposible establer conexión con el dispositivo"
@@ -23,7 +23,7 @@ function reconect_adb_tr10_tool() {
         echo " "
         echo "Iniciando autodetección Nº $reconexion.."
         echo " "            
-        adb wait-for-device
+        $ADB wait-for-device
         echo " "              
         if [ $ESTADO == $CONECTADO ];then
             echo "Conexion reestablecida"
@@ -35,7 +35,7 @@ function reconect_adb_tr10_tool() {
     done
     echo "Imposible establecer conexión..."
     echo " "   
-    adb kill-server
+    $ADB kill-server
     echo "Saliendo..."	
     exit
 }

@@ -10,7 +10,9 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 27/11/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-ESTADO=`adb get-state`
+function conections_tr10_tool() {
+ESTADO=`$ADB get-state`
 CONECTADO="device"
-SERIAL=`adb get-serialno`
+SERIAL=`$ADB get-serialno`
 RECONEXION=1
+}
