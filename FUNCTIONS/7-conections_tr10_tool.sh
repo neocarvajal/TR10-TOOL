@@ -11,8 +11,8 @@
 # Date       : 27/11/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function conections_tr10_tool() {
-ESTADO=`$ADB get-state`
-CONECTADO="device"
-SERIAL=`$ADB get-serialno`
-RECONEXION=1
+	ESTADO=`$ADB get-state`
+	CONECTADO="device"
+	SERIAL=`$ADB get-serialno`
+	RECONEXION=1
 }

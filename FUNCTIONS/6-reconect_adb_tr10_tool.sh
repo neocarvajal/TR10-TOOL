@@ -11,8 +11,7 @@
 # Date       : 27/11/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reconect_adb_tr10_tool() {	
-conections_tr10_tool
+function reconect_adb_tr10_tool() {	  
     while [ $RECONEXION -ne 4 ]; do            
         echo " "
         echo "Imposible establer conexión con el dispositivo"
@@ -21,16 +20,17 @@ conections_tr10_tool
         echo " "
         echo "y la activación de la depuración USB "
         echo " "
-        echo "Iniciando autodetección Nº $reconexion.."
+        echo "Iniciando autodetección Nº $RECONEXION.."
         echo " "            
-        $ADB wait-for-device
-        echo " "              
-        if [ $ESTADO == $CONECTADO ];then
+        $ADB wait-for-device 
+        echo " " 
+        conections_tr10_tool                      
+        if [ $ESTADO == $CONECTADO ]; then
             echo "Conexion reestablecida"
             echo " "                                        
             return             
-        else
-            let "reconexion++"
+        elif [ $ESTADO != $CONECTADO]; then
+            let "RECONEXION++"
         fi            
     done
     echo "Imposible establecer conexión..."

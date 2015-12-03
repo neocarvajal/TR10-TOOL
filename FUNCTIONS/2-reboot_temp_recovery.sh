@@ -13,7 +13,6 @@
 #
 
 function reboot_temp_recovery() {
-conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -36,7 +35,9 @@ conections_tr10_tool
     echo " 2 - ClockworkMod (CWM)"        
     echo " 3 - <-- MENU PRINCIPAL"                
     echo "- - - - - - - - - - - - - - - - - - -"
-    read -p "Seleccione una opción: " opcion    
+    read -p "Seleccione una opción: " opcion       
+    conections_tr10_tool
+    
     if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "
@@ -213,7 +214,7 @@ conections_tr10_tool
              clear
              echo "Regresando al menu principal"
         fi       
-    else
+    else        
     	reconect_adb_tr10_tool	
         reboot_temp_recovery
     fi

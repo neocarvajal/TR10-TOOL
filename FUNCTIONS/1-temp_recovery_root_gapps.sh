@@ -13,7 +13,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function temp_recovery_root_gapps() {
-. conections_tr10_tool.sh	# Variables globales
+conections_tr10_tool
 	clear   
     # Info Dispositivo  -------------------------------------------------
     echo " "

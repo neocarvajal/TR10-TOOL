@@ -15,7 +15,6 @@
 DIR=$(pwd)
 ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
 FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
-VAL="${DIR}/FUNCTIONS/7-conections_tr10_tool.sh"
 
 clear
 # Cerrando servidor ADB--------------------------------------------
@@ -60,8 +59,11 @@ $ADB start-server
 . FUNCTIONS/4-reboot_recovery.sh
 . FUNCTIONS/5-enter_shell.sh
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
-. $VAL
+. FUNCTIONS/7-conections_tr10_tool.sh
 # Aviso -------------------------------------------------------------
+
+conections_tr10_tool 
+
 echo " "
 echo "##################################################"
 echo "#                    AVISO                       #"
@@ -82,7 +84,7 @@ echo "##################################################"
 echo " "
 read -t 5 -p "Presione 'Enter' o espere 5 segundos Para continuar..."
 echo " "
-conections_tr10_tool
+
 if [ $ESTADO == $CONECTADO ]
     then    	
         # Info Dispositivo  -------------------------------------------------
