@@ -70,11 +70,11 @@ conections_tr10_tool
             echo " "
         	$FASTBOOT oem stop_partitioning
             echo " "
-            echo "Entrando en TWRP -- No toque el dispositivo"
-            echo " "   
+            echo "Entrando en TWRP -- No toque el dispositivo"               
             echo " "
             read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
             echo " " 
+            clear
             echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
             echo " Seleccione una opción"
