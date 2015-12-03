@@ -25,7 +25,7 @@ conections_tr10_tool
     echo "  `date`                                          "
     echo "#                                                #"    
     echo "##################################################"
-    echo " "  
+      
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo " Seleccione una opción"

@@ -33,8 +33,7 @@ conections_tr10_tool
         echo " 1 - Reiniciar en modo Recovery (Nativo)"        
         echo " 2 - <-- MENÚ PRINCIPAL"                
         echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion
-        echo " "
+        read -p "Seleccione una opción: " opcion        
 
         if [ $opcion -eq 1 ]; then
         	echo " "

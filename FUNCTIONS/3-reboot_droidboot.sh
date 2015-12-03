@@ -24,8 +24,8 @@ conections_tr10_tool
     echo "#                                                #"
     echo "  `date`                                          "
     echo "#                                                #"    
-    echo "##################################################"
-    echo " "  
+    echo "##################################################"    
+    
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo "  Entrar en modo Droidboot/Fastboot"
@@ -33,8 +33,7 @@ conections_tr10_tool
         echo " 1 - Reiniciar en modo Droidboot/Fastboot"        
         echo " 2 - <-- MENÚ PRINCIPAL"                
         echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion
-        echo " "
+        read -p "Seleccione una opción: " opcion        
 
         if [ $opcion -eq 1 ]; then
         	echo " "
@@ -51,8 +50,7 @@ conections_tr10_tool
 	        echo " 1 - Reiniciar el sistema normalmente"
 	        echo " 2 - <-- Salir (Reiniciare manualmente)"                
 	        echo "- - - - - - - - - - - - - - - - - - -"
-	        read -p "Seleccione una opción: " opcionB
-	        echo " "
+	        read -p "Seleccione una opción: " opcionB	        
 
 	        if [ $opcionB -eq 1 ]; then
 		       	echo " "

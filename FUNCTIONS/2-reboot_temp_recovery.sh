@@ -36,8 +36,7 @@ conections_tr10_tool
     echo " 2 - ClockworkMod (CWM)"        
     echo " 3 - <-- MENU PRINCIPAL"                
     echo "- - - - - - - - - - - - - - - - - - -"
-    read -p "Seleccione una opción: " opcion
-    echo " "
+    read -p "Seleccione una opción: " opcion    
     if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "
