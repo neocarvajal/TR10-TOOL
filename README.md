@@ -32,8 +32,8 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	
 		SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
-  		En el mismo orden que aparece el ID del dispositivo en el segundo paso, 
-  		reemplazalos en esta cadena en el mismo orden y guarda los cambios.
+  		En el mismo orden que aparece el ID del dispositivo en el paso 2, 
+  		reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios.
   		En este caso seria:
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
