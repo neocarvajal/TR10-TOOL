@@ -28,8 +28,8 @@ printf "
 ....##....########.....##...##.....##...###..##....##.....##.##.....##.##......
 ....##....##...##......##...##.....##........##....##.....##.##.....##.##......
 ....##....##....##.....##....##...##.........##....##.....##.##.....##.##......
-....##....##.....##..######...#####..........##.....#######...#######..########                                                           
-"                                                                   
+....##....##.....##..######...#####..........##.....#######...#######..########
+"
 # Alerta TR10-TOOL ------------------------------------------------
 echo " "
 echo "##################################################"
@@ -44,7 +44,7 @@ echo "#                                                #"
 echo "##################################################"
 echo " "
 read -t 10 -p "Presione 'Enter' o espere 10 segundos Para continuar..."
-echo " " 
+echo " "
 
 # Iniciando Servidor ADB
 echo "... Inicializando Servidor ADB"
@@ -62,7 +62,7 @@ $ADB start-server
 . FUNCTIONS/7-conections_tr10_tool.sh
 # Aviso -------------------------------------------------------------
 
-conections_tr10_tool 
+conections_tr10_tool
 
 echo " "
 echo "##################################################"
@@ -86,22 +86,22 @@ read -t 5 -p "Presione 'Enter' o espere 5 segundos Para continuar..."
 echo " "
 
 if [ $ESTADO == $CONECTADO ]
-    then    	
+    then
         # Info Dispositivo  -------------------------------------------------
         echo " "
         echo "##################################################"
         echo "           INFORMACIÓN DEL DISPOSITIVO           	"
         echo "#                                                #"
-        echo "  Emparejado con Pc $USER                         "                
+        echo "  Emparejado con Pc $USER                         "
         echo "#                                                #"
-        echo "  Serial: $SERIAL 			     			    "
+        echo "  Serial: $SERIAL 			     	"
         echo "#                                                #"
         echo "  `date`                                          "
-        echo "#                                                #"    
+        echo "#                                                #"
         echo "##################################################"
-        echo " "        
+        echo " "
         # Menú principal ---------------------------------------------------
-        main_menu        
+        main_menu
 else
     reconect_adb_tr10_tool
     main_menu
