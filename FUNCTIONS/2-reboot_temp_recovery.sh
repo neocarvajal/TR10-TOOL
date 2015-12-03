@@ -41,8 +41,10 @@ conections_tr10_tool
         if [ $opcion -eq 1 ]; then
             echo " "
             read -t 1 -p "Ha seleccionado TWRP como recovery temporal!"
-        	echo " "        	        	
+        	echo " "  
+            echo " "      	        	
         	echo "Entrando en el directorio RECOVERY_LIST y seleccionando TWRP por default"
+            echo " "
         	cd RECOVERY_LIST/TWRP && ls -l
             echo " "
         	echo "Reiniciando en modo Droidboot -- No toque el dispositivo"
@@ -68,10 +70,59 @@ conections_tr10_tool
             echo " "
         	$FASTBOOT oem stop_partitioning
             echo " "
-            echo "Saliendo al directorio principal ..."
+            echo "Entrando en TWRP -- No toque el dispositivo"
+            echo " "   
             echo " "
-        	cd ../../ && ls -l            
+            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            echo " " 
+            echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
+            echo " Seleccione una opción"
+            echo "- - - - - - - - - - - - - - - - - - -"
+            echo " 1 - Reiniciar el sistema normalmente"
+            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo "- - - - - - - - - - - - - - - - - - -"
+            read -p "Seleccione una opción: " opcionB           
+
+            if [ $opcionB -eq 1 ]; then
+                echo " "
+                read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
+                echo " "
+                $ADB reboot
+                echo " "
+                echo "Cerrando conexiones ..."  
+                echo " "            
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escríbeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            elif [$opcionB -eq 2 ]; then                
+                echo " "            
+                echo " Saliendo al directorio principal ..."
+                echo " "
+                cd ../../ && ls -l
+                echo " "
+                echo "Cerrando conexiones ..."  
+                echo " "
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escribeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            fi            
         elif [ $opcion -eq 2 ]; then
             echo " "
             read -t 1 -p "Ha seleccionado CWM como recovery temporal!"           
@@ -106,20 +157,58 @@ conections_tr10_tool
             $FASTBOOT oem backup_factory 
             echo " "            
             read -t 1 -p "Entrando en CWM -- No toque el dispositivo "
-            echo " "           
-            echo " Saliendo al directorio principal ..."
+            echo " "      
             echo " "
-            cd ../../ && ls -l
+            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            echo " " 
+            echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
-            clear
-            echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-            echo " "             
-            echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
-            echo " "
-            echo "Escríbeme y te haré llegar la documentación necesaria"
-            echo " "
-            echo "Erick Carvajal R - @neocarvajal"
-            echo " "
+            echo " Seleccione una opción"
+            echo "- - - - - - - - - - - - - - - - - - -"
+            echo " 1 - Reiniciar el sistema normalmente"
+            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo "- - - - - - - - - - - - - - - - - - -"
+            read -p "Seleccione una opción: " opcionB           
+
+            if [ $opcionB -eq 1 ]; then
+                echo " "
+                read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
+                echo " "
+                $ADB reboot
+                echo " "
+                echo "Cerrando conexiones ..."  
+                echo " "            
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escríbeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            elif [$opcionB -eq 2 ]; then                
+                echo " "            
+                echo " Saliendo al directorio principal ..."
+                echo " "
+                cd ../../ && ls -l
+                echo " "
+                echo "Cerrando conexiones ..."  
+                echo " "
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escribeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            fi            
         else 
              clear
              echo "Regresando al menu principal"
