@@ -35,7 +35,6 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
   		En el mismo orden que aparece el ID del dispositivo en el segundo paso, 
   		reemplazalos en esta cadena en el mismo orden y guarda los cambios.
   		En este caso seria:
-
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
 	5 - En el terminal reinicia el servicio udev :
@@ -46,8 +45,10 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	1 - Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
-	2 -	Entrar en Configuración/Menú desarrollador/Depuración USB.	
+	2 - Entrar en Configuración/Menú desarrollador/Depuración USB.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
+
+	3 - Acepta los permisos Depuración USB al conectar la tablet a la pc
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
