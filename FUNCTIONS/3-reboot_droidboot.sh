@@ -58,7 +58,7 @@ conections_tr10_tool
 		       	echo " "
 	        	read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
 	        	echo " "
-	        	`fastboot continue`
+	        	`$FASTBOOT continue`
 	        	echo " "
 	        	echo "Cerrando conexiones ..."	
 		       	echo " "        	
