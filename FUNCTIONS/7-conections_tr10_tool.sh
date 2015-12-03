@@ -8,7 +8,7 @@
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 27/11/2015
+# Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function conections_tr10_tool() {
 	ESTADO=`$ADB get-state`
@@ -16,3 +16,4 @@ function conections_tr10_tool() {
 	SERIAL=`$ADB get-serialno`
 	RECONEXION=1
 }
+
