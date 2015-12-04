@@ -13,7 +13,6 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function temp_recovery_root_gapps() {
-conections_tr10_tool
 	clear   
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -28,15 +27,17 @@ conections_tr10_tool
     echo "#                                                #"    
     echo "##################################################"
     echo " "  
+    
+    echo " "
+    echo " ¿Desea Empezar o Regresar?"
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - "
+    echo " 1 - Custom Recovery (TWRP Tactil) Root + Gapps"
+    echo " 2 - <-- MENÚ PRINCIPAL"                
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - -"
+    read -p "Seleccione una opción: " opcion
+    conections_tr10_tool
+
     if [ $ESTADO == $CONECTADO ]; then
-	    echo " "
-        echo " ¿Desea Empezar o Regresar?"
-        echo "- - - - - - - - - - - - - - - - - - - - - - - - "
-        echo " 1 - Custom Recovery (TWRP Tactil) Root + Gapps"
-        echo " 2 - <-- MENÚ PRINCIPAL"                
-        echo "- - - - - - - - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion
-        echo " "
 
         if [ $opcion -eq 1 ]; then
             echo " "
@@ -107,6 +108,6 @@ conections_tr10_tool
         fi       
     else
     	reconect_adb_tr10_tool
-        main_menu
+        temp_recovery_root_gapps
     fi
 }
