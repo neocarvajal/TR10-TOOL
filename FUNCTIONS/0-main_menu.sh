@@ -13,16 +13,17 @@
 #
 function main_menu() {
 	opcion=0
-    while [ $opcion -ne 6 ]
+    while [ $opcion -ne 7 ]
     do
         echo " "
         echo " ADB MANAGER FOR LINUX"
         echo "- - - - - - - - - - - - - - - - - - -"
-        echo " 1 - Recovery temporal + Root + Gapps"
+        echo " 1 - Recovery temporal + Root + Gapps"        
         echo " 2 - Reiniciar en Recovery Temporal (TWRP) "
         echo " 3 - Reiniciar en Droidboot (Fastboot)"
         echo " 4 - Reiniciar en Recovery (Nativo/Adb)"
         echo " 5 - Entrar en el shell del dispositivo"
+        #echo " 6 - Multi Root + Gapps"
         echo " 6 - Salir "
         echo "- - - - - - - - - - - - - - - - - - -"
         read -p "Seleccione una opción: " opcion
@@ -49,6 +50,10 @@ function main_menu() {
             5)
 				enter_shell
 			;;
+
+            # 6)
+            #     multi_flash_root_gapps
+            # ;;
 
 			6)
 				echo "Saliendo ...";

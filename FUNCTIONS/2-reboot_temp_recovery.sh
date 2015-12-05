@@ -104,12 +104,8 @@ function reboot_temp_recovery() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            elif [$opcionB -eq 2 ]; then                
-                echo " "            
-                echo " Saliendo al directorio principal ..."
-                echo " "
-                cd ../../ && ls -l
-                echo " "
+            elif [$opcionB -eq 2 ]; then
+                echo " "      
                 echo "Cerrando conexiones ..."  
                 echo " "
                 $ADB kill-server
