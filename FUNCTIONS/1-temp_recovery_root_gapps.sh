@@ -12,31 +12,29 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function temp_recovery_root_gapps() {
-	clear   
+function temp_recovery_root_gapps() {    	
+    clear   
     # Info Dispositivo  -------------------------------------------------
     echo " "
     echo "##################################################"
     echo "           INFORMACIÓN DEL DISPOSITIVO            "
     echo "#                                                #"
-    echo "  Emparejado con Pc $USER                         "                
+    echo "  Emparejado con Pc $USER                         "
     echo "#                                                #"
     echo "  Serial: $SERIAL                                 "
     echo "#                                                #"
     echo "  `date`                                          "
-    echo "#                                                #"    
+    echo "#                                                #"
     echo "##################################################"
-    echo " "  
+    echo " "    
     
-    echo " "
     echo " ¿Desea Empezar o Regresar?"
     echo "- - - - - - - - - - - - - - - - - - - - - - - - "
     echo " 1 - Custom Recovery (TWRP Tactil) Root + Gapps"
     echo " 2 - <-- MENÚ PRINCIPAL"                
     echo "- - - - - - - - - - - - - - - - - - - - - - - - -"
-    read -p "Seleccione una opción: " opcion
+    read -p "Seleccione una opción: " opcion    
     conections_tr10_tool
-
     if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then            
             echo " "
@@ -50,8 +48,8 @@ function temp_recovery_root_gapps() {
             echo " "
             $ADB push -p super_su-canaima.zip /sdcard/ 
             echo " "
-            echo "Saliendo del directorio SUPER_SU.."
-            echo " "
+            echo "Saliendo del directorio SUPER_SU.."            
+            echo " "            
             echo "Entrando en directorio GAPPS"
             echo " "
             cd ../GAPPS && ls -l
@@ -61,6 +59,7 @@ function temp_recovery_root_gapps() {
             read -t 1 -p "Copiando 215MB esto podría tardar unos minutos -- No toque el dispositivo"
             echo " "
             $ADB push -p open_gapps-x86.zip /sdcard/
+            echo " "                     
             echo "Saliendo del direcciontio GAPPS y entrando en RECOVERY_LIST"   
             echo " "       
             cd ../RECOVERY_LIST/TWRP && ls -l
@@ -98,9 +97,9 @@ function temp_recovery_root_gapps() {
             echo " Seleccione una opción"
             echo "- - - - - - - - - - - - - - - - - - -"
             echo " 1 - Reiniciar el sistema normalmente"
-            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
-            read -p "Seleccione una opción: " opcionB           
+            read -p "Seleccione una opción: " opcionB
 
             if [ $opcionB -eq 1 ]; then
                 echo " "

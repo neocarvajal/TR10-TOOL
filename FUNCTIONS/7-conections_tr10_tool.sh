@@ -10,13 +10,17 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-function conections_tr10_tool() {
+function adb_globals() {
+	# Global SDK ------------------------------------------------------
 	DIR=$(pwd)
 	ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
-	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
+	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"	
+}
+
+function conections_tr10_tool() {
+	# Global Estate ---------------------------------------------------
 	ESTADO=`$ADB get-state`
 	CONECTADO="device"
 	SERIAL=`$ADB get-serialno`
-	RECONEXION=1
+	RECONEXION=1	
 }
-

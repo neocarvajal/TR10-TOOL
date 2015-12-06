@@ -12,7 +12,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Variables Globales TR10-TOOL-------------------------------------
+# Variables Globales TR10-TOOL---------------------------------------
 . FUNCTIONS/0-main_menu.sh
 . FUNCTIONS/1-temp_recovery_root_gapps.sh
 . FUNCTIONS/2-reboot_temp_recovery.sh
@@ -21,8 +21,7 @@
 . FUNCTIONS/5-enter_shell.sh
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
 . FUNCTIONS/7-conections_tr10_tool.sh
-conections_tr10_tool
-
+adb_globals
 clear
 # Cerrando servidor ADB--------------------------------------------
 echo "Cerrando conexiones ADB viejas ..."
@@ -37,6 +36,11 @@ printf "
 ....##....##....##.....##....##...##.........##....##.....##.##.....##.##......
 ....##....##.....##..######...#####..........##.....#######...#######..########
 "
+echo " "
+# Iniciando Servidor ADB---------------------------------------------
+echo "... Inicializando Servidor ADB"
+echo " "
+$ADB start-server
 # Alerta TR10-TOOL ------------------------------------------------
 echo " "
 echo "##################################################"
@@ -52,11 +56,6 @@ echo "##################################################"
 echo " "
 read -t 10 -p "Presione 'Enter' o espere 10 segundos Para continuar..."
 echo " "
-
-# Iniciando Servidor ADB---------------------------------------------
-echo "... Inicializando Servidor ADB"
-echo " "
-$ADB start-server
 # Aviso -------------------------------------------------------------
 echo " "
 echo "##################################################"
@@ -75,27 +74,30 @@ echo "#                                                #"
 echo "# Redes: @neocarvajal on #Twitter and #Facebook  #"
 echo "#                                                #"
 echo "##################################################"
+conections_tr10_tool
 echo " "
 read -t 5 -p "Presione 'Enter' o espere 5 segundos Para continuar..."
 echo " "
+if [ $ESTADO == $CONECTADO ]; then
+    clear   
+    MODELO=`$ADB shell getprop | grep ro.product.model | awk '{print $2}'`
 
-if [ $ESTADO == $CONECTADO ]
-    then
-        # Info Dispositivo  -------------------------------------------------
-        echo " "
-        echo "##################################################"
-        echo "           INFORMACIÓN DEL DISPOSITIVO           	"
-        echo "#                                                #"
-        echo "  Emparejado con Pc $USER                         "
-        echo "#                                                #"
-        echo "  Serial: $SERIAL                                 "
-        echo "#                                                #"
-        echo "  `date`                                          "
-        echo "#                                                #"
-        echo "##################################################"
-        echo " "
-        # Menú principal ---------------------------------------------------
-        main_menu
+
+    # Info Dispositivo  -------------------------------------------------
+    echo " "
+    echo "##################################################"
+    echo "           INFORMACIÓN DEL DISPOSITIVO            "
+    echo "#                                                #"
+    echo "  Emparejado con Pc $USER                         "
+    echo "#                                                #"
+    echo "  Serial: $SERIAL                                 "
+    echo "#                                                #"
+    echo "  `date`                                          "
+    echo "#                                                #"
+    echo "##################################################"
+    echo " "  
+    # Menú principal ---------------------------------------------------
+    main_menu
 else
     reconect_adb_tr10_tool
     main_menu

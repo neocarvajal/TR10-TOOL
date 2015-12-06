@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_native_recovery() {	
-
+    conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -33,9 +33,8 @@ function reboot_native_recovery() {
         echo " 1 - Reiniciar en modo Recovery (Nativo)"        
         echo " 2 - <-- MENÚ PRINCIPAL"                
         echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion        
-        conections_tr10_tool
-        
+        read -p "Seleccione una opción: " opcion       
+                        
         if [ $opcion -eq 1 ]; then
         	echo " "
          	read -t 2 -p "Reiniciando en modo Recovery (Nativo) -- No toque el dispositivo "

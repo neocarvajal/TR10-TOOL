@@ -55,9 +55,7 @@ function main_menu() {
             #     multi_flash_root_gapps
             # ;;
 
-			6)
-				echo "Saliendo ...";
-				echo " ";
+			6)				
                 clear;
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!";
                 echo " ";             
@@ -72,9 +70,8 @@ function main_menu() {
             *) 
 				echo "Opción equivocada";
 				echo " ";
-				echo "Saliendo...";
-			;;
-                
+
+			;;                
         esac        
     done
 }
