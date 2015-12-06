@@ -71,8 +71,7 @@ function reboot_temp_recovery() {
         	$FASTBOOT oem stop_partitioning
             echo " "
             echo "Entrando en TWRP -- No toque el dispositivo"               
-            echo " "
-            echo " "
+            echo " "            
             clear
             echo " "
             read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
