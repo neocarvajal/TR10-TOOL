@@ -90,7 +90,7 @@ function temp_recovery_root_gapps() {
             echo " "
             clear
             echo " "
-            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            read -p "Al finalizar puede Presionar Enter para Reiniciar el sistema normalmente "
             echo " "             
             echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "

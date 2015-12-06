@@ -14,7 +14,7 @@ function adb_globals() {
 	# Global SDK ------------------------------------------------------
 	DIR=$(pwd)
 	ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
-	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"	
+	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
 }
 
 function conections_tr10_tool() {
@@ -22,5 +22,5 @@ function conections_tr10_tool() {
 	ESTADO=`$ADB get-state`
 	CONECTADO="device"
 	SERIAL=`$ADB get-serialno`
-	RECONEXION=1	
+	RECONEXION=1
 }
