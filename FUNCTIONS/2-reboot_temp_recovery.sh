@@ -72,17 +72,19 @@ function reboot_temp_recovery() {
             echo " "
             echo "Entrando en TWRP -- No toque el dispositivo"               
             echo " "
-            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
-            echo " " 
+            echo " "
             clear
+            echo " "
+            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            echo " "             
             echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
             echo " Seleccione una opción"
             echo "- - - - - - - - - - - - - - - - - - -"
             echo " 1 - Reiniciar el sistema normalmente"
-            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
-            read -p "Seleccione una opción: " opcionB           
+            read -p "Seleccione una opción: " opcionB
 
             if [ $opcionB -eq 1 ]; then
                 echo " "
