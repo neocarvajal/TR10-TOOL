@@ -41,9 +41,9 @@ function reboot_native_recovery() {
          	echo " "
             $ADB reboot recovery 
             echo " "
-            echo "Una vez reiniciado el dispositivo presione la siguiente combinación 2 o 3 veces: " 
+            echo "Una vez reiniciado el dispositivo presione la siguiente combinación 1 o 2 veces: " 
             echo " "          
-            echo "Botón Power (botón naranja de encendido) + Volumen Up + Volumen Down"
+            echo "Volumen Up + Volumen Down"
             echo " "
             read -p "Presione enter para salir ..."
             echo " "
