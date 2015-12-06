@@ -29,7 +29,7 @@ function reconect_adb_tr10_tool() {
             echo "Conexion reestablecida"
             echo " "                                        
             return             
-        elif [ $ESTADO != $CONECTADO]; then
+        elif [ $ESTADO != $CONECTADO ]; then
             let "RECONEXION++"
         fi            
     done

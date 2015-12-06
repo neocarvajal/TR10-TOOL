@@ -21,6 +21,7 @@
 . FUNCTIONS/5-enter_shell.sh
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
 . FUNCTIONS/7-conections_tr10_tool.sh
+#. FUNCTIONS/7-multi_flash_root_gapps.sh
 adb_globals
 clear
 # Cerrando servidor ADB--------------------------------------------
@@ -79,10 +80,7 @@ echo " "
 read -t 5 -p "Presione 'Enter' o espere 5 segundos Para continuar..."
 echo " "
 if [ $ESTADO == $CONECTADO ]; then
-    clear   
-    MODELO=`$ADB shell getprop | grep ro.product.model | awk '{print $2}'`
-
-
+    clear  
     # Info Dispositivo  -------------------------------------------------
     echo " "
     echo "##################################################"
