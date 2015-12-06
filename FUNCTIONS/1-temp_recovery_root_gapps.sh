@@ -93,15 +93,53 @@ function temp_recovery_root_gapps() {
             echo " Saliendo al directorio principal ..."
             cd ../../ && ls -l 
             echo " "
+            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            echo " " 
             clear
-            echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-            echo " "             
-            echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+            echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
-            echo "Escríbeme y te haré llegar la documentación necesaria"
-            echo " "
-            echo "Erick Carvajal R - @neocarvajal"
-            echo " "
+            echo " Seleccione una opción"
+            echo "- - - - - - - - - - - - - - - - - - -"
+            echo " 1 - Reiniciar el sistema normalmente"
+            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo "- - - - - - - - - - - - - - - - - - -"
+            read -p "Seleccione una opción: " opcionB           
+
+            if [ $opcionB -eq 1 ]; then
+                echo " "
+                read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
+                echo " "
+                $ADB reboot
+                echo " "
+                echo "Cerrando conexiones ..."  
+                echo " "            
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escríbeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            elif [$opcionB -eq 2 ]; then
+                echo " "      
+                echo "Cerrando conexiones ..."  
+                echo " "
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escribeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            fi            
         else 
             clear
             echo "Regresando al menú principal"
