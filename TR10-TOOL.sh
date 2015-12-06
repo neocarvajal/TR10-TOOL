@@ -21,13 +21,13 @@
 . FUNCTIONS/5-enter_shell.sh
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
 . FUNCTIONS/7-conections_tr10_tool.sh
-#. FUNCTIONS/7-multi_flash_root_gapps.sh
+# Variables globales ADB--------------------------------------------
 adb_globals
 clear
-# Cerrando servidor ADB--------------------------------------------
+# Cerrando servidor ADB---------------------------------------------
 echo "Cerrando conexiones ADB viejas ..."
 $ADB kill-server
-# Titulo ----------------------------------------------------------
+# Titulo -----------------------------------------------------------
 printf "
 .########.########.....##.....#####.......########..#######...#######..##......
 ....##....##.....##..####....##...##.........##....##.....##.##.....##.##......
