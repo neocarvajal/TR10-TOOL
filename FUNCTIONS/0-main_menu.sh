@@ -13,7 +13,7 @@
 
 function main_menu() {
 	opcion=0
-    while [ $opcion -ne 7 ]
+    while [ $opcion -ne 6 ]
     do
         echo " "
         echo " ADB MANAGER FOR LINUX"
@@ -40,7 +40,7 @@ function main_menu() {
 				
 			3)
 				reboot_droidboot
-			;;s
+			;;
 
             4)
                 reboot_native_recovery
