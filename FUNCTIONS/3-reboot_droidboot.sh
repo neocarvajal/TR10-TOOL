@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_droidboot() {	
-conections_tr10_tool
+	conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -41,51 +41,54 @@ conections_tr10_tool
          	echo " "
             $ADB reboot-bootloader && $FASTBOOT getvar all
             echo " "
-            read -p "Al finalizar puede Precionar Enter para Iniciar el sistema normalmente "
-            echo " " 
+            clear
+            echo " "
+            read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
+            echo " "             
             echo "Desea reiniciar el sistema o lo hara manualmente?"
-	        echo " "
-	        echo " Seleccione una opción"
-	        echo "- - - - - - - - - - - - - - - - - - -"
-	        echo " 1 - Reiniciar el sistema normalmente"
-	        echo " 2 - <-- Salir (Reiniciare manualmente)"                
-	        echo "- - - - - - - - - - - - - - - - - - -"
-	        read -p "Seleccione una opción: " opcionB	        
+            echo " "
+            echo " Seleccione una opción"
+            echo "- - - - - - - - - - - - - - - - - - -"
+            echo " 1 - Reiniciar el sistema normalmente"
+            echo " 2 - <-- Salir (Reiniciare manualmente)"
+            echo "- - - - - - - - - - - - - - - - - - -"
+            read -p "Seleccione una opción: " opcionB        
 
 	        if [ $opcionB -eq 1 ]; then
 		       	echo " "
-	        	read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
-	        	echo " "
+                read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
+                echo " "
 	        	`$FASTBOOT continue`
 	        	echo " "
-	        	echo "Cerrando conexiones ..."	
-		       	echo " "        	
-		       	$ADB kill-server
-		       	clear
-		       	echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-	            echo " "             
-	            echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
-	            echo " "
-	            echo "Escríbeme y te haré llegar la documentación necesaria"
-	            echo " "
-	            echo "Erick Carvajal R - @neocarvajal"
-	            echo " "
-		       	break
-	        elif [$opcionB -eq 2 ]; then
-		       	echo "Cerrando conexiones ..."	
-		       	echo " "        	
-		       	$ADB kill-server
-		       	clear
-		       	echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-	            echo " "             
-	            echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
-	            echo " "
-	            echo "Escribeme y te haré llegar la documentación necesaria"
-	            echo " "
-	            echo "Erick Carvajal R - @neocarvajal"
-	            echo " "
-		       	break
-	        fi
+                echo "Cerrando conexiones ..."  
+                echo " "            
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escríbeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            elif [ $opcionB -eq 2 ]; then
+                echo " "      
+                echo "Cerrando conexiones ..."  
+                echo " "
+                $ADB kill-server
+                clear
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
+                echo " "             
+                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+                echo " "
+                echo "Escribeme y te haré llegar la documentación necesaria"
+                echo " "
+                echo "Erick Carvajal R - @neocarvajal"
+                echo " "
+                break
+            fi
 	    else
 	    	echo "Regresando al Menú principal ..."
         fi

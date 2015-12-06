@@ -38,8 +38,7 @@ function temp_recovery_root_gapps() {
     conections_tr10_tool
 
     if [ $ESTADO == $CONECTADO ]; then
-
-        if [ $opcion -eq 1 ]; then
+        if [ $opcion -eq 1 ]; then            
             echo " "
             read -t 1 -p "Ha seleccionado TWRP como recovery temporal!"         
             echo " "
@@ -90,12 +89,10 @@ function temp_recovery_root_gapps() {
             echo " "
             $FASTBOOT oem stop_partitioning
             echo " "
-            echo " Saliendo al directorio principal ..."
-            cd ../../ && ls -l 
+            clear
             echo " "
             read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
-            echo " " 
-            clear
+            echo " "             
             echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
             echo " Seleccione una opción"
@@ -124,7 +121,7 @@ function temp_recovery_root_gapps() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            elif [$opcionB -eq 2 ]; then
+            elif [ $opcionB -eq 2 ]; then
                 echo " "      
                 echo "Cerrando conexiones ..."  
                 echo " "
@@ -139,7 +136,7 @@ function temp_recovery_root_gapps() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            fi            
+            fi
         else 
             clear
             echo "Regresando al menú principal"

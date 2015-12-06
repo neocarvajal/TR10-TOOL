@@ -11,6 +11,9 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function conections_tr10_tool() {
+	DIR=$(pwd)
+	ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
+	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
 	ESTADO=`$ADB get-state`
 	CONECTADO="device"
 	SERIAL=`$ADB get-serialno`

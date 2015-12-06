@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function enter_shell() {
-conections_tr10_tool
+    conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -37,7 +37,6 @@ conections_tr10_tool
         echo " "
 
         if [ $opcion -eq 1 ]; then
-
 	      	read -t 2 -p "Entrando en el shell"
 	      	echo " "
 	      	echo " "

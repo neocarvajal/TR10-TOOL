@@ -10,10 +10,10 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-#
+
 function main_menu() {
 	opcion=0
-    while [ $opcion -ne 7 ]
+    while [ $opcion -ne 6 ]
     do
         echo " "
         echo " ADB MANAGER FOR LINUX"
@@ -68,7 +68,6 @@ function main_menu() {
                 echo "Erick Carvajal R - @neocarvajal";
                 echo " ";
 			;;
-
 
             *) 
 				echo "Opción equivocada";

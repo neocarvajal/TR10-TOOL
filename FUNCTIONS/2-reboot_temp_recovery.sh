@@ -10,7 +10,6 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-#
 
 function reboot_temp_recovery() {
 	clear
@@ -104,7 +103,7 @@ function reboot_temp_recovery() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            elif [$opcionB -eq 2 ]; then
+            elif [ $opcionB -eq 2 ]; then
                 echo " "      
                 echo "Cerrando conexiones ..."  
                 echo " "
@@ -119,7 +118,7 @@ function reboot_temp_recovery() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            fi            
+            fi
         elif [ $opcion -eq 2 ]; then
             echo " "
             read -t 1 -p "Ha seleccionado CWM como recovery temporal!"           
@@ -154,18 +153,19 @@ function reboot_temp_recovery() {
             $FASTBOOT oem backup_factory 
             echo " "            
             read -t 1 -p "Entrando en CWM -- No toque el dispositivo "
-            echo " "      
+            echo " "
+            clear
             echo " "
             read -p "Al finalizar puede Precionar Enter para Reiniciar el sistema normalmente "
-            echo " " 
+            echo " "             
             echo "Desea reiniciar el sistema o lo hara manualmente?"
             echo " "
             echo " Seleccione una opción"
             echo "- - - - - - - - - - - - - - - - - - -"
             echo " 1 - Reiniciar el sistema normalmente"
-            echo " 2 - <-- Salir (Reiniciare manualmente)"                
+            echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
-            read -p "Seleccione una opción: " opcionB           
+            read -p "Seleccione una opción: " opcionB
 
             if [ $opcionB -eq 1 ]; then
                 echo " "
@@ -186,12 +186,8 @@ function reboot_temp_recovery() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            elif [$opcionB -eq 2 ]; then                
-                echo " "            
-                echo " Saliendo al directorio principal ..."
-                echo " "
-                cd ../../ && ls -l
-                echo " "
+            elif [ $opcionB -eq 2 ]; then
+                echo " "      
                 echo "Cerrando conexiones ..."  
                 echo " "
                 $ADB kill-server
@@ -205,7 +201,7 @@ function reboot_temp_recovery() {
                 echo "Erick Carvajal R - @neocarvajal"
                 echo " "
                 break
-            fi            
+            fi
         else 
              clear
              echo "Regresando al menu principal"

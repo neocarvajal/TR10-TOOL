@@ -11,10 +11,17 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Variables SDK android-linux -------------------------------------
-DIR=$(pwd)
-ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
-FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
+
+# Variables Globales TR10-TOOL-------------------------------------
+. FUNCTIONS/0-main_menu.sh
+. FUNCTIONS/1-temp_recovery_root_gapps.sh
+. FUNCTIONS/2-reboot_temp_recovery.sh
+. FUNCTIONS/3-reboot_droidboot.sh
+. FUNCTIONS/4-reboot_recovery.sh
+. FUNCTIONS/5-enter_shell.sh
+. FUNCTIONS/6-reconect_adb_tr10_tool.sh
+. FUNCTIONS/7-conections_tr10_tool.sh
+conections_tr10_tool
 
 clear
 # Cerrando servidor ADB--------------------------------------------
@@ -46,24 +53,11 @@ echo " "
 read -t 10 -p "Presione 'Enter' o espere 10 segundos Para continuar..."
 echo " "
 
-# Iniciando Servidor ADB
+# Iniciando Servidor ADB---------------------------------------------
 echo "... Inicializando Servidor ADB"
 echo " "
 $ADB start-server
-
-# Cargando librerias TR10-TOOL --------------------------------------
-. FUNCTIONS/0-main_menu.sh
-. FUNCTIONS/1-temp_recovery_root_gapps.sh
-. FUNCTIONS/2-reboot_temp_recovery.sh
-. FUNCTIONS/3-reboot_droidboot.sh
-. FUNCTIONS/4-reboot_recovery.sh
-. FUNCTIONS/5-enter_shell.sh
-. FUNCTIONS/6-reconect_adb_tr10_tool.sh
-. FUNCTIONS/7-conections_tr10_tool.sh
 # Aviso -------------------------------------------------------------
-
-conections_tr10_tool
-
 echo " "
 echo "##################################################"
 echo "#                    AVISO                       #"
@@ -94,7 +88,7 @@ if [ $ESTADO == $CONECTADO ]
         echo "#                                                #"
         echo "  Emparejado con Pc $USER                         "
         echo "#                                                #"
-        echo "  Serial: $SERIAL 			     	"
+        echo "  Serial: $SERIAL                                 "
         echo "#                                                #"
         echo "  `date`                                          "
         echo "#                                                #"
