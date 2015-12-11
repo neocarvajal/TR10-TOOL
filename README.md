@@ -18,18 +18,17 @@ Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no rec
 
 Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir:
 
-	1 - Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
+	1.  Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
+		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
 
-		![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png)
-
-    2 - Listar los dispositivos conectados via USB y copiar el vendor_id 
+    2.  Listar los dispositivos conectados via USB y copiar el vendor_id 
   		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
 
-	3 - Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al siguiente paso).
+	3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al siguiente paso).
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
-	4 - Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules).
+	4.  Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules).
 		Copia y pega esta cadena en el archivo :
 	
 		SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
@@ -39,30 +38,30 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
   		En este caso seria:
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
-	5 - En el terminal reinicia el servicio udev :
+	5.  En el terminal reinicia el servicio udev :
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo :	
 	
-	1 - Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
+	1.  Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
-	2 - Entrar en Configuración/Menú desarrollador/Depuración USB.	
+	2.  Entrar en Configuración/Menú desarrollador/Depuración USB.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 
-	3 - Acepta los permisos Depuración USB al conectar la tablet a la pc
+	3.  Acepta los permisos Depuración USB al conectar la tablet a la pc
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
-1 - Descargar el zip/tar.gz de la repo y descomprimir.
+1.  Descargar el zip/tar.gz de la repo y descomprimir.
 
-2 - Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante).
+2.  Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS : http://opengapps.org/ (Android x86 4.4 / Cualquier variante).
 
-3 - Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso).
+3.  Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso).
 
-4 - Ejecutar el script TR10-TOOL.sh de la siguiente manera : ./TR10-TOOL.sh
+4.  Ejecutar el script TR10-TOOL.sh de la siguiente manera : ./TR10-TOOL.sh
 
-5 - Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero).
+5.  Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero).
 
 # Video Guía
 https://www.youtube.com/watch?v=Cm7QASoZeWk
