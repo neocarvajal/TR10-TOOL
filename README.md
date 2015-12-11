@@ -41,7 +41,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo
-	1.  Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación
+	1.  Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
 	2.  Entrar en Configuración/Menú desarrollador/Depuración USB
@@ -51,15 +51,15 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
-1.  Descargar el zip/tar.gz de la repo y descomprimir
+	1.  Descargar el zip/tar.gz de la repo y descomprimir
 
-2.  Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS http://opengapps.org/ (Android x86 4.4 / Cualquier variante)
+	2.  Descargar gapps (.zip) y ubicarlo en la carpeta GAPPS con el nombre que tiene el archivo.txt en el mismo directorio. Link descarga GAPPS http://opengapps.org/ (Android x86 4.4 / Cualquier variante)
 
-3.  Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso)
+	3.  Activar la depuración USB en el dispositivo y aceptar como RSA de confianza (seǵun sea el caso)
 
-4.  Ejecutar el script TR10-TOOL.sh de la siguiente manera  ./TR10-TOOL.sh
+	4.  Ejecutar el script TR10-TOOL.sh de la siguiente manera  ./TR10-TOOL.sh
 
-5.  Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero)
+	5.  Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara el error de que no encuentra el fichero)
 
 # Video Guía
 https://www.youtube.com/watch?v=Cm7QASoZeWk
