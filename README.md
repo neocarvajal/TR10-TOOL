@@ -19,8 +19,8 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Permisos root en terminal")
 
-2. Listar los dispositivos conectados via USB y copiar el vendor_id 
-	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
+2. Listar los dispositivos conectados vía USB y copiar el vendor_id 
+	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañía).
 
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png "Listar dispositivos con lsusb")
 
@@ -43,7 +43,7 @@ Copia y pega esta cadena en el archivo:
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png "Reiniciar servicio UDEV")
 
 ## Preparando el dispositivo
-1. Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
+1. Entrar en Configuración/Acerca de la tablet/ y presionar varias veces en el Numero de Compilación:
 	
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png "Activar menú programador")
 
@@ -78,4 +78,4 @@ T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russi�
 Crear una herramienta con más opciones y mucho más universal como si se tratara de una "Suite" que permita gestionar diferentes dispositivos en tareas comunes fácilmente (respaldos, copiar archivos entre un pc y el dispositivo, entre otros), manteniendo las opciones "avanzadas" como flashear Temp Recovery
 
 # Soporte/Contacto
-Para discuciones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
+Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
