@@ -18,7 +18,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 
 1. Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
 	
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
+   ![alt text](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Title")
 
 2. Listar los dispositivos conectados via USB y copiar el vendor_id 
 	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
