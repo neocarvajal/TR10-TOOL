@@ -23,7 +23,8 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
   		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia):
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
 
-	3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe ve al siguiente paso).
+	3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules
+	    (si ya existe el archivo ve al siguiente paso).
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
 	4.  Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules).
