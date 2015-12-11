@@ -32,7 +32,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 4. Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
 Copia y pega esta cadena en el archivo:
 
- `SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"`
+ #`SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"`
 
 	En el mismo orden que aparece el ID del dispositivo en el paso 2, 
 	reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios:
