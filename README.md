@@ -35,18 +35,21 @@ Copia y pega esta cadena en el archivo:
     SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
 En el mismo orden que aparece el ID del dispositivo en el paso 2, 
-reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios
-En este caso seria:
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
+reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios. En este caso seria:
 
-5.  En el terminal reinicia el servicio udev. 
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
+
+5.  En el terminal reinicia el servicio udev:
+	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo
 1.  Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
+	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
 2.  Entrar en Configuración/Menú desarrollador/Depuración USB:
+	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 
 3.  Acepta los permisos Depuración USB al conectar la tablet a la pc:
@@ -63,7 +66,7 @@ https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 4.  Ejecutar el script TR10-TOOL.sh de la siguiente manera  ./TR10-TOOL.sh
 
 5.  Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara 
-	el error de que no encuentra el fichero)
+	el error de que no encuentra el fichero).
 
 # Video Guía
 https://www.youtube.com/watch?v=Cm7QASoZeWk
