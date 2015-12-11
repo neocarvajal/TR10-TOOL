@@ -1,5 +1,7 @@
 # TR10 TOOL 
 
+![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/TR10-TOOL-BANNER.png "TR10-TOOL BANNER")
+
 # Advertencia
 Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
@@ -17,16 +19,16 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 
 1. Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
 	
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Permisos root en terminal")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Permisos root en terminal")
 
 2. Listar los dispositivos conectados via USB y copiar el vendor_id 
 	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
 
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png "Listar dispositivos con lsusb")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png "Listar dispositivos con lsusb")
 
 3. Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso).
 
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png "Crear regla udev")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png "Crear regla udev")
 
 4. Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
 Copia y pega esta cadena en el archivo:
@@ -36,23 +38,23 @@ Copia y pega esta cadena en el archivo:
 	En el mismo orden que aparece el ID del dispositivo en el paso 2, 
 	reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios:
 
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png "Agregar idVendor y idProduct")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png "Agregar idVendor y idProduct")
 
 5. En el terminal reinicia el servicio udev:
 	
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png "Reiniciar servicio UDEV")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png "Reiniciar servicio UDEV")
 
 ## Preparando el dispositivo
 1. Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
 	
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png "Activar menú programador")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png "Activar menú programador")
 
 2. Entrar en Configuración/Menú desarrollador/Depuración USB:
 	
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png "Activar depuración USB")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png "Activar depuración USB")
 
 3. Aceptar los permisos Depuración USB (huella digital) al conectar la tablet a la pc:
-   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/8.png "Huella digital")
+   ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/8.png "Huella digital")
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
@@ -79,4 +81,3 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 
 # Soporte/Contacto
 Para discuciones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
-
