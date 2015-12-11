@@ -27,7 +27,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 
 3. Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso).
 
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png "Crear regla udev")
 
 4. Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
 Copia y pega esta cadena en el archivo:
@@ -37,20 +37,20 @@ Copia y pega esta cadena en el archivo:
 	En el mismo orden que aparece el ID del dispositivo en el paso 2, 
 	reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios:
 
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png "Agregar idVendor y idProduct")
 
 5. En el terminal reinicia el servicio udev:
 	
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png "Reiniciar servicio UDEV")
 
 ## Preparando el dispositivo
 1. Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
 	
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png "Activar menú programador")
 
 2. Entrar en Configuración/Menú desarrollador/Depuración USB:
 	
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png "Activar depuración USB")
 
 3. Acepta los permisos Depuración USB al conectar la tablet a la pc:
 -----------------------------------------------------------------------------------------------
