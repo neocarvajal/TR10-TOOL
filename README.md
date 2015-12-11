@@ -17,38 +17,39 @@ Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no rec
 Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir:
 
 1.  Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
+	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
 
 2.  Listar los dispositivos conectados via USB y copiar el vendor_id 
-  		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
+	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
 
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
 
-3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso)
+3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso).
 
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
 4.  Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
-Copia y pega esta cadena en el archivo
+Copia y pega esta cadena en el archivo:
 
-SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
 En el mismo orden que aparece el ID del dispositivo en el paso 2, 
 reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios
-En este caso seria
+En este caso seria:
 https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
-5.  En el terminal reinicia el servicio udev 
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
+5.  En el terminal reinicia el servicio udev. 
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo
-1.  Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
+1.  Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
-2.  Entrar en Configuración/Menú desarrollador/Depuración USB
-https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
+2.  Entrar en Configuración/Menú desarrollador/Depuración USB:
+	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png
 
-3.  Acepta los permisos Depuración USB al conectar la tablet a la pc
+3.  Acepta los permisos Depuración USB al conectar la tablet a la pc:
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
