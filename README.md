@@ -16,16 +16,17 @@ Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no rec
 ## Preparando el sistema
 Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir.
 
-1.  Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root
-		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
+1.  Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
+https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png
 
 2.  Listar los dispositivos conectados via USB y copiar el vendor_id 
-  		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia)
-		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
+  		(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
 
-3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules
-	    (si ya existe el archivo ve al siguiente paso)
-		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
+https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
+
+3.  Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso)
+
+https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/3.png
 
 4.  Con tu editor de texto preferido abre el archivo creado(/etc/udev/rules.d/51-android.rules)
 Copia y pega esta cadena en el archivo
