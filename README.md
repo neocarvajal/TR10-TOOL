@@ -75,7 +75,7 @@ https://www.youtube.com/watch?v=Cm7QASoZeWk
 T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russiían". Usuario Gnu/Linux desde 2009.
 
 # Meta
-Crear una herramienta con más opciones y mucho más universal como si se tratara de una Suite tipo (kies) que permita gestionar el dispositivo facilmente en tareas comunes(respaldos, copiar archivos entre un pc y el dispositivo entre otros), manteniendo las opciones "avanzadas" como flashear Cunstom Recovery.
+Crear una herramienta con más opciones y mucho más universal como si se tratara de una "Suite" que permita gestionar diferentes dispositivos en tareas comunes fácilmente (respaldos, copiar archivos entre un pc y el dispositivo, entre otros), manteniendo las opciones "avanzadas" como flashear Temp Recovery
 
 # Soporte/Contacto
-Para discuciones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
+Para discuciones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
