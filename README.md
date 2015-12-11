@@ -34,14 +34,14 @@ Copia y pega esta cadena en el archivo:
 
     SUBSYSTEM=="usb", ATTRS{idVendor}=="",ATTRS{idProduct}=="", MODE="0666"
 
-En el mismo orden que aparece el ID del dispositivo en el paso 2, 
-reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios:
+	En el mismo orden que aparece el ID del dispositivo en el paso 2, 
+	reemplazalos en esta cadena respectivamente (idVendor | idProduct) y guarda los cambios:
 
    https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/6.png
 
 5. En el terminal reinicia el servicio udev:
 	
-	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
+   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
 ## Preparando el dispositivo
 1. Entrar en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación:
