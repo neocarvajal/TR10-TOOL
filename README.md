@@ -18,12 +18,12 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 
 1. Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
 	
-   ![alt text](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Title")
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/1.png "Permisos root en terminal")
 
 2. Listar los dispositivos conectados via USB y copiar el vendor_id 
 	(podria solo mostrar hasta el ID resaltado sin el nombre de la compañia).
 
-   https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png
+   ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/2.png "Listar dispositivos con lsusb")
 
 3. Crear una regla en la siguiente ruta /etc/udev/rules.d/51-android.rules (si ya existe el archivo ve al siguiente paso).
 
