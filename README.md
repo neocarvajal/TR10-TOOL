@@ -52,7 +52,7 @@ Copia y pega esta cadena en el archivo:
 	
    ![](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png "Activar depuración USB")
 
-3. Acepta los permisos Depuración USB al conectar la tablet a la pc:
+3. Aceptar los permisos Depuración USB al conectar la tablet a la pc
 -----------------------------------------------------------------------------------------------
 
 # Configurando TR10-TOOL
