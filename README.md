@@ -7,15 +7,13 @@ Esta herramienta fue desarrollada con fines educativos, cada persona es responsa
 # Información
 Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
 
-# Pasos para utilizar la herramienta 
+# Pasos para utilizar la herramienta
 - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# (realizar todos los pasos como super usuario)	
+realizar todos los pasos como super usuario
 - - - - - - - - - - - - - - - - - - - - - - - - -
 Usualmente puede pasar que en Gnu/Linux (dependiendo de la distribución) no reconozca de buenas a primeras tu dispositivo y por tal razón sea imposible que pueda comunicarse con el vía adb o fastboot. Si este es tu caso tendrás que hacer ciertas cosas antes de empezar a utilizar esta herramienta (Si este no es tu caso ve directo a Preparando el dispositivo).
 
-## Preparando el sistema:	
-
+## Preparando el sistema
 Este procedimiento seria el equivalente a instalar los drivers en un sistema privativo como Windows para poder reconocer el dispositivo, estos son los pasos a seguir.
 
 	1.  Conectar el dispositivo al Pc Gnu/Linux y en un terminal entrar como root:
@@ -41,8 +39,7 @@ Este procedimiento seria el equivalente a instalar los drivers en un sistema pri
 	5.  En el terminal reinicia el servicio udev :
 		https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/7.png
 
-## Preparando el dispositivo 	
-	
+## Preparando el dispositivo
 	1.  Entrar  en Configuración/Acerca de la tablet/ y precionar varias veces en el Numero de Compilación.	
 	https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/4.png
 
