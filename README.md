@@ -68,7 +68,7 @@ Copia y pega esta cadena en el archivo:
 5. Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara 
 	el error de que no encuentra el fichero).
 
-# Video Guía
+# Video Guía (editando video nuevo...)
 https://www.youtube.com/watch?v=Cm7QASoZeWk
 
 # Desarrollador
