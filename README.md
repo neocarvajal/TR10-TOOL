@@ -51,7 +51,7 @@ Copia y pega esta cadena en el archivo:
 	
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/5.png "Activar depuración USB")
 
-3. Aceptar los permisos Depuración USB (huella digital) al conectar la tablet a la pc:
+3. Aceptar los permisos Depuración USB (huella digital) al ejecutar el script y conectar la tablet al pc:
    ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/8.png "Huella digital")
 -----------------------------------------------------------------------------------------------
 
