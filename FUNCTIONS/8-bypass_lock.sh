@@ -57,8 +57,12 @@ function bypass_lock() {
             echo " " 
             echo " "
             clear       	            
+            echo " "
             read -p "Bypass Success ! - Presione enter para continuar..."
-            echo " "            
+            echo " "
+            read -t 2 -p " Dispositivo listo para entrar con cualquier patrón..."           
+            echo " "
+            echo " "
             read -t 1 -p "Regresando al Menú principal !!!"
             echo " "
             main_menu
