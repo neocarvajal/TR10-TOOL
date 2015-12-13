@@ -78,12 +78,13 @@ T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russi�
 Crear una herramienta con más opciones y mucho más universal como si se tratara de una "Suite" que permita gestionar diferentes dispositivos en tareas comunes fácilmente (respaldos, copiar archivos entre un pc y el dispositivo, entre otros), manteniendo las opciones "avanzadas" como flashear Temp Recovery
 
 # Agradecimientos
-1. Team Win Recovery Project [TWRP][] Repositorio official.
+1. Team Win Recovery Project [TWRP][] (repositorio official).
 
 [TWRP]: https://github.com/omnirom/android_bootable_recovery/
 
-2. Usuario [vampirefo][http://forum.xda-developers.com/search.php?searchid=397303595]
-miembro de la comunidad *XDA* por el trabajo realizado con los recovery's temporales para los dispositivos Dell Vennue 8 (CWM/TRWP). 
+2. Usuario [vampirefo][] miembro de la comunidad *XDA* por el trabajo realizado con los recovery's temporales para los dispositivos Dell Vennue 8 (CWM/TRWP). 
+
+[vampirefo]: http://forum.xda-developers.com/search.php?searchid=397303595
 
 # Soporte/Contacto
 Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
