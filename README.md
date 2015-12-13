@@ -6,6 +6,14 @@ Esta herramienta fue desarrollada con fines educativos, cada persona es responsa
 # Información
 Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
 
+# Funciones Disponibles
+1. - Recovery temporal + Root + Gapps 	(Copia archivo Super_SU y Gapps | Entra en recovery temporal TWRP)
+2. - Reiniciar en Recovery Temporal 	(TWRP/CWM) 
+3. - Reiniciar en Droidboot (Fastboot)  (Bootloader/Fastboot)
+4. - Reiniciar en Recovery (Nativo/Adb) (Recovery Mode)
+5. - Entrar en el shell del dispositivo (Un pequeño gran mundo en tu dispositivo)
+6. - Bypass Lock 						(Desbloquear dispositivo por PIN/CONTRASEÑA/PATRÓN)
+
 # Pasos para utilizar la herramienta
 - - - - - - - - - - - - - - - - - - - - - - - - -
 realizar todos los pasos como super usuario

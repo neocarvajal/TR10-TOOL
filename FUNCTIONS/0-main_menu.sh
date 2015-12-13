@@ -19,7 +19,7 @@ function main_menu() {
         echo " ADB MANAGER FOR LINUX"
         echo "- - - - - - - - - - - - - - - - - - -"
         echo " 1 - Recovery temporal + Root + Gapps"
-        echo " 2 - Reiniciar en Recovery Temporal (TWRP)"
+        echo " 2 - Reiniciar en Recovery Temporal"
         echo " 3 - Reiniciar en Droidboot (Fastboot)"
         echo " 4 - Reiniciar en Recovery (Nativo/Adb)"
         echo " 5 - Entrar en el shell del dispositivo"
