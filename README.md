@@ -10,7 +10,7 @@ Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versió
 1. - Recovery temporal + Root + Gapps 	(Copia archivo Super_SU y Gapps | Entra en recovery temporal TWRP)
 2. - Reiniciar en Recovery Temporal 	(TWRP/CWM) 
 3. - Reiniciar en Droidboot (Fastboot)  (Bootloader/Fastboot)
-4. - Reiniciar en Recovery (Nativo/Adb) (Recovery Mode)
+4. - Reiniciar en Recovery (Nativo)		(Recovery Mode)
 5. - Entrar en el shell del dispositivo (Un pequeño gran mundo en tu dispositivo)
 6. - Bypass Lock 						(Desbloquear dispositivo por PIN/CONTRASEÑA/PATRÓN)
 

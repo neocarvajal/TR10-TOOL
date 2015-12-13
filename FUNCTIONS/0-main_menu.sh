@@ -21,7 +21,7 @@ function main_menu() {
         echo " 1 - Recovery temporal + Root + Gapps"
         echo " 2 - Reiniciar en Recovery Temporal"
         echo " 3 - Reiniciar en Droidboot (Fastboot)"
-        echo " 4 - Reiniciar en Recovery (Nativo/Adb)"
+        echo " 4 - Reiniciar en Recovery (Nativo)"
         echo " 5 - Entrar en el shell del dispositivo"
         echo " 6 - Bypass Lock (necesario ser ROOT)"
         echo " 7 - Salir "
