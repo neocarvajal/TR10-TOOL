@@ -23,4 +23,5 @@ function conections_tr10_tool() {
 	CONECTADO="device"
 	SERIAL=`$ADB get-serialno`
 	RECONEXION=1
+	OPCION=0
 }

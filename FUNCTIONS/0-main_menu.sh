@@ -12,23 +12,24 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function main_menu() {
-	opcion=0
-    while [ $opcion -ne 6 ]
+    clear	
+    while [ $OPCION -ne 7 ]
     do
         echo " "
         echo " ADB MANAGER FOR LINUX"
         echo "- - - - - - - - - - - - - - - - - - -"
-        echo " 1 - Recovery temporal + Root + Gapps"        
-        echo " 2 - Reiniciar en Recovery Temporal (TWRP) "
+        echo " 1 - Recovery temporal + Root + Gapps"
+        echo " 2 - Reiniciar en Recovery Temporal (TWRP)"
         echo " 3 - Reiniciar en Droidboot (Fastboot)"
         echo " 4 - Reiniciar en Recovery (Nativo/Adb)"
-        echo " 5 - Entrar en el shell del dispositivo"        
-        echo " 6 - Salir "
+        echo " 5 - Entrar en el shell del dispositivo"
+        echo " 6 - Bypass Lock (necesario ser ROOT)"
+        echo " 7 - Salir "
         echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion
+        read -p "Seleccione una opción: " OPCION
         echo " "         
 
-        case $opcion in        	
+        case $OPCION in        	
             1)
          		temp_recovery_root_gapps           
             ;;
@@ -48,9 +49,13 @@ function main_menu() {
 			
             5)
 				enter_shell
-			;;            
+			;;
+            
+            6)
+                bypass_lock
+            ;;            
 
-			6)				
+			7)				
                 clear;
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!";
                 echo " ";             
@@ -63,9 +68,9 @@ function main_menu() {
 			;;
 
             *) 
+                echo " "
 				echo "Opción equivocada";
 				echo " ";
-
 			;;                
         esac        
     done

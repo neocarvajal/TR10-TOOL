@@ -21,6 +21,7 @@
 . FUNCTIONS/5-enter_shell.sh
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
 . FUNCTIONS/7-conections_tr10_tool.sh
+. FUNCTIONS/8-bypass_lock.sh
 # Variables globales ADB--------------------------------------------
 adb_globals
 clear

@@ -31,10 +31,10 @@ function reboot_temp_recovery() {
     echo " Seleccione el recovery a utilizar"
     echo "- - - - - - - - - - - - - - - - - - -"
     echo " 1 - TWRP (Tactil)"
-    echo " 2 - ClockworkMod (CWM)"        
-    echo " 3 - <-- MENU PRINCIPAL"                
+    echo " 2 - ClockworkMod (CWM)"
+    echo " 3 - <-- MENU PRINCIPAL"
     echo "- - - - - - - - - - - - - - - - - - -"
-    read -p "Seleccione una opción: " opcion       
+    read -p "Seleccione una opción: " opcion
     conections_tr10_tool
     
     if [ $ESTADO == $CONECTADO ]; then
