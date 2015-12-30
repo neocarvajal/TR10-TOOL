@@ -19,7 +19,7 @@ function temp_recovery_root_gapps() {
     echo "##################################################"
     echo "           INFORMACIÓN DEL DISPOSITIVO            "
     echo "#                                                #"
-    echo "  Emparejado con Pc $USER                         "
+    echo "  Emparejado con Pc $HOSTNAME                     "
     echo "#                                                #"
     echo "  Serial: $SERIAL                                 "
     echo "#                                                #"

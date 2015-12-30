@@ -11,7 +11,7 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+#
 # Variables Globales TR10-TOOL---------------------------------------
 . FUNCTIONS/0-main_menu.sh
 . FUNCTIONS/1-temp_recovery_root_gapps.sh
@@ -29,7 +29,7 @@ clear
 echo "Cerrando conexiones ADB viejas ..."
 $ADB kill-server
 # Titulo -----------------------------------------------------------
-printf "
+echo -e '\t \v \e[33;1m
 .########.########.....##.....#####.......########..#######...#######..##......
 ....##....##.....##..####....##...##.........##....##.....##.##.....##.##......
 ....##....##.....##....##...##.....##........##....##.....##.##.....##.##......
@@ -37,7 +37,7 @@ printf "
 ....##....##...##......##...##.....##........##....##.....##.##.....##.##......
 ....##....##....##.....##....##...##.........##....##.....##.##.....##.##......
 ....##....##.....##..######...#####..........##.....#######...#######..########
-"
+\e[m'
 echo " "
 # Iniciando Servidor ADB---------------------------------------------
 echo "... Inicializando Servidor ADB"
@@ -87,7 +87,7 @@ if [ $ESTADO == $CONECTADO ]; then
     echo "##################################################"
     echo "           INFORMACIÓN DEL DISPOSITIVO            "
     echo "#                                                #"
-    echo "  Emparejado con Pc $USER                         "
+    echo "  Emparejado con Pc $HOSTNAME                     "
     echo "#                                                #"
     echo "  Serial: $SERIAL                                 "
     echo "#                                                #"
