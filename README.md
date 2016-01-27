@@ -94,5 +94,19 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 
 [vampirefo]: http://forum.xda-developers.com/search.php?searchid=397303595
 
+# Entorno Gráfico - Versión 1.1.0
+
+1. Barra de progreso de carga del script:
+
+	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/CargandoScript.png "Cargando Script")
+
+2. Notificación de alerta e inicio de servidor ADB:
+
+	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/Notificacion1.png "Notificación de Inicio")
+	
+3. Menu de opciones principales:
+	
+	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/MenuPrincipal.png "Menu Principal")
+
 # Soporte/Contacto
 Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
