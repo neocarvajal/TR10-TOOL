@@ -58,7 +58,7 @@ function temp_recovery_root_gapps() {
             echo " "
             read -t 1 -p "Copiando 215MB esto podría tardar unos minutos -- No toque el dispositivo"
             echo " "
-            $ADB push -p open_gapps-x86.zip /sdcard/
+            $ADB push -p open_gapps-x86.txt /sdcard/
             echo " "                     
             echo "Saliendo del direcciontio GAPPS y entrando en RECOVERY_LIST"   
             echo " "       
