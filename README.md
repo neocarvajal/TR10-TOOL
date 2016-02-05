@@ -1,6 +1,8 @@
 ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/master/IMAGES/TR10-TOOL-BANNER.png "TR10-TOOL BANNER")
 
 # Advertencia
+
+[![Join the chat at https://gitter.im/neocarvajal/TR10-TOOL](https://badges.gitter.im/neocarvajal/TR10-TOOL.svg)](https://gitter.im/neocarvajal/TR10-TOOL?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Esta herramienta fue desarrollada con fines educativos, cada persona es responsable de su uso y de los posibles daños ocasionados a los equipos con los que se utilice el script !
 
 # Información
@@ -93,20 +95,6 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 2. Usuario [vampirefo][] miembro de la comunidad *XDA* por el trabajo realizado con los recovery's temporales para los dispositivos Dell Vennue 8 (CWM/TRWP). 
 
 [vampirefo]: http://forum.xda-developers.com/search.php?searchid=397303595
-
-# Entorno Gráfico - Versión 1.1.0
-
-1. Barra de progreso de carga del script:
-
-	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/CargandoScript.png "Cargando Script")
-
-2. Notificación de alerta e inicio de servidor ADB:
-
-	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/Notificacion1.png "Notificación de Inicio")
-	
-3. Menu de opciones principales:
-	
-	![by @WuilmerBolivar](https://raw.githubusercontent.com/WuilmerBolivar/TR10-TOOL/master/IMAGES/MenuPrincipal.png "Menu Principal")
 
 # Soporte/Contacto
 Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
