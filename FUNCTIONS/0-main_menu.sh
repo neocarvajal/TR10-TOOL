@@ -13,7 +13,7 @@
 
 function main_menu {
     clear   
-    while [ $OPCION -ne 8 ]
+    while [ $OPCION -ne 7 ]
     do
         echo " "
         echo " ADB MANAGER FOR LINUX"
@@ -24,8 +24,7 @@ function main_menu {
         echo " 4 - Reiniciar en Recovery (Nativo)"
         echo " 5 - Entrar en el shell del dispositivo"
         echo " 6 - Bypass Lock (necesario ser ROOT)"
-        echo " 7 - Multiflash"
-        echo " 8 - Salir "
+        echo " 7 - Salir "
         echo "- - - - - - - - - - - - - - - - - - -"
         read -p "Seleccione una opción: " OPCION
         echo " "         
@@ -55,13 +54,9 @@ function main_menu {
             
             6)
                 bypass_lock
-            ;;            
-
-            7)
-               multi_flash_option
-            ;; 
-
-            8)              
+            ;;
+            
+            7)              
                 clear;
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!";
                 echo " ";             
