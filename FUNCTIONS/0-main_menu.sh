@@ -1,65 +1,79 @@
-# Menu de opciones -------------------------------------------------
-DIR=$(pwd)
-function Main(){
-{ 
-select=$(zenity --cancel-label="Salir" --height=380 --width=300 --list --title ".: MENU PRINCIPAL :." --hide-column 1 --text "Serial de Tablet: $SERIAL\nEmparejado con PC: $HOSTNAME\n`date`" --column "" --column "Opciones: " \
-"1" "Reiniciar en Recovery Temporal" \
-"2" "Recovery Temporal + Root + Gapps" \
-"3" "Reiniciar en Droidboot (Fastboot)" \
-"4" "Reiniciar en Recovery (Nativo)" \
-"5" "Shell del dispositivo" \
-"6" "Bypass Lock (ROOT)" \
-"7" "Créditos" \
-"8" "Ayuda")
-	if [ $select = 1 ]; then
-		reboot_temp_recovery
-	fi
-	if [ $select = 2 ]; then
-		temp_recovery_root_gapps           
-	fi
-	if [ $select = 3 ]; then
-		reboot_droidboot
-	fi	
-	if [ $select = 4 ]; then
-		reboot_native_recovery
-	fi	
-	if [ $select = 5 ]; then
-		enter_shell
-	fi	
-	if [ $select = 6 ]; then
-		bypass_lock
-	fi	
-if [ $select = 7 ]; then
-rm -f /tmp/InfoTool.txt
-echo '== Información ==
-Herramienta fue desarrollada con fines educativos, 
-cada persona es responsable de su uso.  
+#!/bin/bash
+# 0-main_menu.sh
+#
+# Función que permite entrar en el Menú principal
+#
+#~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+#
+# Developer  : Erick Carvajal Rodriguez
+# Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
+# Date       : 06/02/2016
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-== Desarrollador ==
-T.S.U Erick Carvajal R
-Nick: neocarvajal                              
+function main_menu {
+    clear   
+    while [ $OPCION -ne 8 ]
+    do
+        echo " "
+        echo " ADB MANAGER FOR LINUX"
+        echo "- - - - - - - - - - - - - - - - - - -"
+        echo " 1 - Recovery temporal + Root + Gapps"
+        echo " 2 - Reiniciar en Recovery Temporal"
+        echo " 3 - Reiniciar en Droidboot (Fastboot)"
+        echo " 4 - Reiniciar en Recovery (Nativo)"
+        echo " 5 - Entrar en el shell del dispositivo"
+        echo " 6 - Bypass Lock (necesario ser ROOT)"
+        echo " 7 - Multiflash"
+        echo " 8 - Salir "
+        echo "- - - - - - - - - - - - - - - - - - -"
+        read -p "Seleccione una opción: " OPCION
+        echo " "         
 
-=== Contacto ===                                              
-Correo electronico: neocarvajal12@gmail.com              
-Facebook: www.facebook.com/neocarvajal
-Twitter: @neocarvajal
+        case $OPCION in         
+            
+            1)
+                temp_recovery_root_gapps           
+            ;;
 
-== Desarrollo ==
-Versión 1.0.0
-Repositorio original:
-github.com/neocarvajal/TR10-TOOL
+            2)
+                reboot_temp_recovery
+            
+            ;;
+                
+            3)
+                reboot_droidboot
+            ;;
 
-== Colaboradores ==
-ING. Wuilmer Bolívar
-Twitter: @WuilmerBolivar
-Facebook: www.facebook.com/Wuilmer22
-Repositorio alternativo: 
-github.com/WuilmerBolivar/TR10-TOOL' >> /tmp/InfoTool.txt
-About=`zenity --cancel-label="Salir" --height=660 --width=425 --text-info --title "Acerca de..." --filename=/tmp/InfoTool.txt --checkbox='Ya he leído todo.'`
-fi	
-if [ $select = 8 ]; then
-	Readme=`dirname $0`/README.md
-	Archivo=`zenity --cancel-label="Salir" --text-info --height=400 --width=650 --title="Ayuda" --filename=$Readme`
-fi	
-}
+            4)
+                reboot_native_recovery
+            ;;
+            
+            5)
+                enter_shell
+            ;;
+            
+            6)
+                bypass_lock
+            ;;            
+
+            7)
+               multi_flash_option
+            ;; 
+
+            8)              
+                clear;
+                echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!";
+                echo " ";             
+                echo "Desarrollado Por : Erick Carvajal R - @neocarvajal";
+                echo " ";
+            ;;
+
+            *) 
+                echo " "
+                echo "Opción equivocada";
+                echo " ";
+            ;;                
+        esac        
+    done
 }
