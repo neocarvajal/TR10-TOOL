@@ -10,7 +10,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reboot_droidboot() {	
+function reboot_droidboot {	
 	conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------

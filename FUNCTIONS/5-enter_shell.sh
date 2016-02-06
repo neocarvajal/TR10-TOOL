@@ -10,7 +10,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function enter_shell() {
+function enter_shell {
     conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------

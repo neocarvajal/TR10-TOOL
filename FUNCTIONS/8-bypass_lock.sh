@@ -15,7 +15,7 @@
 # Date       : 12/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function bypass_lock() {
+function bypass_lock {
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "

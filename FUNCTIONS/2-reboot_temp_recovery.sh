@@ -11,7 +11,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reboot_temp_recovery() {
+function reboot_temp_recovery {
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "

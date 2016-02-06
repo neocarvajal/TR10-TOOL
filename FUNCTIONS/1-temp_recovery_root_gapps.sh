@@ -12,7 +12,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function temp_recovery_root_gapps() {    	
+function temp_recovery_root_gapps {    	
     clear   
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -59,7 +59,7 @@ function temp_recovery_root_gapps() {
             read -t 1 -p "Copiando 215MB esto podría tardar unos minutos -- No toque el dispositivo"
             echo " "
             $ADB push -p open_gapps-x86.zip /sdcard/
-            echo " "                     
+            echo " "
             echo "Saliendo del direcciontio GAPPS y entrando en RECOVERY_LIST"   
             echo " "       
             cd ../RECOVERY_LIST/TWRP && ls -l
@@ -100,7 +100,6 @@ function temp_recovery_root_gapps() {
             echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
             read -p "Seleccione una opción: " opcionB
-
             if [ $opcionB -eq 1 ]; then
                 echo " "
                 read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "

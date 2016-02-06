@@ -10,7 +10,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reboot_native_recovery() {	
+function reboot_native_recovery {	
     conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------

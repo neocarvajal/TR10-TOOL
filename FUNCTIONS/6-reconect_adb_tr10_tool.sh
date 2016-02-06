@@ -11,7 +11,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reconect_adb_tr10_tool() {	  
+function reconect_adb_tr10_tool {	  
     while [ $RECONEXION -ne 4 ]; do            
         echo " "
         echo "Imposible establer conexión con el dispositivo"
