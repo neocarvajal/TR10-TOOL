@@ -4,7 +4,7 @@
 https://gitter.im/neocarvajal/TR10-TOOL
 
 # Información
-Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versión de adb y fastboot del sdk alone tools para Gnu/Linux. Script pensado para ser utilizado con los modelos TR10CS1 y TR10RS1 de intel entregadas por el estado venezolano a estudiantes universitarios. #CanaimaUniversitario
+Esta rama de desarrollo solo avanzara en nuevas funcionalidades dejando (bash) como entorno gráfico
 
 # Funciones Disponibles
 1. - Recovery temporal + Root + Gapps 	(Copia archivo Super_SU y Gapps | Entra en recovery temporal TWRP)
