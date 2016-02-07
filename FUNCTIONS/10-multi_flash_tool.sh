@@ -23,18 +23,18 @@
 function multiflash_tool { 	
 	echo "Multiflash for TR10-TOOL 1.0.0"
 	echo "============================== "	
-	case $1 in  
-		# E_SIGNAL="100" = "Multi Root and Gapps" #		
-        "100")			
-			# Recorriendo el arreglo de dispositivos  - - - - - - - - - - 
-			echo "Device Selected"			
+	case $1 in
+		# E_SIGNAL="100" = "Multi Root and Gapps" #
+        "100")
+			# Recorriendo el arreglo de dispositivos  - - - - - - - - - -
+			echo "Device Selected"
 			for item in ${!flash_device_array[*]}; do
 				echo ${flash_device_array[$item]}
 			done
 			echo "============================== "
 			# Dimension del arreglo - - - - - - - - - - - - - - - - - - -
 			#echo ${#flash_device_array[@]}
-		    read -t 1 -p "Seleccionando TWRP como recovery temporal!"         
+		    read -t 1 -p "Seleccionando TWRP como recovery temporal!"
 		    echo " "
 		    echo "Entrando en el directorio SUPER_SU"
 		    echo " "
