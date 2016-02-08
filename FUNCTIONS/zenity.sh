@@ -18,7 +18,7 @@
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 fzenity() {
 	zenity --list --checklist --hide-header --ok-label="Seleccionar" \
-	--height=340 --width=300 --title ".: PRINCIPAL :." --hide-column 1 \
+	--height=380 --width=300 --title ".: PRINCIPAL :." --hide-column 1 \
 	--text "Serial de Tablet: $SERIAL\nEmparejado con PC: $HOSTNAME\n`date`" \
 	--column "" --column "Opciones: " \
 		"1" "Reiniciar en Recovery Temporal" \
