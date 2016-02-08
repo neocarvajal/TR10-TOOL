@@ -127,7 +127,7 @@ function multi_flash_option {
         # Eliminando Log
         rm -rf D_LOG/DEVICES_CONECTED
         # - - - - - - - - - - - - - - - - - - - - - - - - -
-    fi
+   
     # MULTI GAPPS (I_SIGNAL)
     elif [ $opcion -eq 3]; then
         #  ------------------------------------------------- 
@@ -178,7 +178,7 @@ function multi_flash_option {
         # Eliminando Log
         rm -rf D_LOG/DEVICES_CONECTED
         # - - - - - - - - - - - - - - - - - - - - - - - - -
-    fi
+    
     # MULTI ZIP/UPDATE (C_SIGNAL)
     elif [ $opcion -eq 4]; then
         #  ------------------------------------------------- 
@@ -229,9 +229,9 @@ function multi_flash_option {
         # Eliminando Log
         rm -rf D_LOG/DEVICES_CONECTED
         # - - - - - - - - - - - - - - - - - - - - - - - - -
-    fi
+    
     #MULTI APK INSTALL (K_SIGNAL)
-    elif [ $opcion -eq 3]; then
+    elif [ $opcion -eq 5]; then
         #  ------------------------------------------------- 
         echo " "
         echo "Reconociendo dispositivos conectados -- No toque los dispositivos"
@@ -280,7 +280,7 @@ function multi_flash_option {
         # Eliminando Log
         rm -rf D_LOG/DEVICES_CONECTED
         # - - - - - - - - - - - - - - - - - - - - - - - - -
-    fi
+    
     else 
         clear
         echo "Regresando al menú principal"
