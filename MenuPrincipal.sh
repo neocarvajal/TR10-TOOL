@@ -30,9 +30,11 @@ fconections_tr10_tool
 
 #= = = = = = = = = = Función del Menú Principal = = = = = = = = = =
 MenuPrincipal() {
-
+ if [ $SERIAL == 'unknown' ]; then
+	OPCION=$(fzenity)
+ else
 	OPCION=$(zenity --list --hide-header --ok-label="Seleccionar" \
-	--height=340 --width=300 --title ".: PRINCIPAL :." --hide-column 1 \
+	--height=380 --width=300 --title ".: PRINCIPAL :." --hide-column 1 \
 	--text "Serial de Tablet: $SERIAL\nEmparejado con PC: $HOSTNAME\n`date`" \
 	--column "" --column "Opciones: " \
 		"1" "Reiniciar en Recovery Temporal" \
@@ -41,9 +43,10 @@ MenuPrincipal() {
 		"4" "Reiniciar en Recovery (Nativo)" \
 		"5" "Shell del dispositivo" \
 		"6" "Bypass Lock (Root)" \
-		"7" "Créditos" \
-		"8" "Ayuda")
-
+		"7" "Multiflash (Desarrollando)" \
+		"8" "Créditos" \
+		"9" "Ayuda")
+ fi
 #= = = = = = = = = = Función Opciones de la herramienta = = = = = = = = = =
 Opciones() {
 case $OPCION in
@@ -342,6 +345,10 @@ case $OPCION in
 ;;	
 
 7)
+	zenity --info --text="En desarrollo"
+;;	
+
+8)
 	rm -f /tmp/InfoTool.txt
 	echo '########## TR10-TOOL ##########
 == Información ==
@@ -386,9 +393,9 @@ case $OPCION in
 	zenity --ok-label="Aceptar" --height=660 --width=425 --text-info \
 	--title "Acerca de" --filename=/tmp/InfoTool.txt --checkbox='Comprendo!'
 			MenuPrincipal
-;;	
+;;
 
-8)
+9)
 	readme=`dirname $0`/README.md
 	zenity --ok-label="Aceptar" --text-info --height=400 --width=650 \
 	--title="Ayuda" --filename=$readme
