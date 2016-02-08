@@ -27,6 +27,7 @@ fzenity() {
 		"4" "Reiniciar en Recovery (Nativo)" \
 		"5" "Shell del dispositivo" \
 		"6" "Bypass Lock (Root)" \
-		"7" "Créditos" \
-		"8" "Ayuda"
+		"7" "Multiflash (Desarrollando)" \
+		"8" "Créditos" \
+		"9" "Ayuda"
 }
