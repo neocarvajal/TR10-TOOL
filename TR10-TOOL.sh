@@ -3,14 +3,14 @@
 # Este script te ayudará en el proceso de rooteo de la Tablet TR10CS1 y TR10RS1
 # Activar la depuración USB en tu dispositivo para que funcione sin problemas.
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# COLABORADOR EN VERSIÓN 2.0.0 CON ENTORNO GRAFICO UTILIZANDO ZENITY
+# ENTORNO GRAFICO UTILIZANDO ZENITY
 #
 # Developer  : Wuilmer Bolivar
 # Contact    : http://twitter.com/wuilmerbolivar && http://fb.com/wuilmer22

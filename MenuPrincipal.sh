@@ -2,14 +2,14 @@
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Script que permite mostrar el menú y operar de acuerdo a lo selecionado.
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# COLABORADOR EN VERSIÓN 2.0.0 CON ENTORNO GRAFICO UTILIZANDO ZENITY
+# ENTORNO GRAFICO UTILIZANDO ZENITY
 #
 # Developer  : Wuilmer Bolivar
 # Contact    : http://twitter.com/wuilmerbolivar && http://fb.com/wuilmer22
@@ -30,9 +30,9 @@ fconections_tr10_tool
 
 #= = = = = = = = = = Función del Menú Principal = = = = = = = = = =
 MenuPrincipal() {
- if [ $SERIAL == 'unknown' ]; then
-	OPCION=$(fzenity)
- else
+ #if [ $SERIAL == 'unknown' ]; then
+	#OPCION=$(fzenity)
+ #else
 	OPCION=$(zenity --list --hide-header --ok-label="Seleccionar" \
 	--height=380 --width=300 --title ".: PRINCIPAL :." --hide-column 1 \
 	--text "Serial de Tablet: $SERIAL\nEmparejado con PC: $HOSTNAME\n`date`" \
@@ -46,7 +46,7 @@ MenuPrincipal() {
 		"7" "Multiflash (Desarrollando)" \
 		"8" "Créditos" \
 		"9" "Ayuda")
- fi
+ #fi
 #= = = = = = = = = = Función Opciones de la herramienta = = = = = = = = = =
 Opciones() {
 case $OPCION in
@@ -345,7 +345,37 @@ case $OPCION in
 ;;	
 
 7)
-	zenity --info --text="En desarrollo"
+	OPCION7=$(zenity --hide-header --ok-label="Seleccionar" \
+	--height=300 --width=0 --list \
+	--title "Multiflash" --hide-column 1 \
+	--text "Serial de Tablet: $SERIAL\nEmparejado con PC: $HOSTNAME\n`date`" \
+	--column "" --column "Opciones: " \
+		"1" "Multi Root" \
+		"2" "Multi Gapps" \
+		"3" "Root and Gapps" \
+		"4" "Multi Zip/Update" \
+		"5" "Multi Apk Install" \
+		"6" "Regresar al menu")
+
+	if [ $OPCION7 = 1 ]; then
+			MenuPrincipal
+	fi	
+
+	if [ $OPCION7 = 2 ]; then
+			MenuPrincipal
+	fi	
+	if [ $OPCION7 = 3 ]; then
+			MenuPrincipal
+	fi
+	if [ $OPCION7 = 4 ]; then
+			MenuPrincipal
+	fi
+	if [ $OPCION7 = 5 ]; then
+			MenuPrincipal
+	fi
+	if [ $OPCION7 = 6 ]; then
+			MenuPrincipal
+	fi
 ;;	
 
 8)
@@ -358,28 +388,22 @@ case $OPCION in
 	en los modelos TR10CS1/TR10RS1 entregadas
 	por el estado venezolano.
 
-== Desarrollo ==
-	* Versión 2.0.0
-	Se implementa zenity como entorno grafico.
-		Repositorio alternativo: 
-		github.com/WuilmerBolivar/TR10-TOOL
-
-	* Versión 1.0.0
-	Para ser utilizada desde la terminal
-		Repositorio:
-		github.com/neocarvajal/TR10-TOOL
-
-== Desarrollador ==
+== Desarrolladores ==
+	* Versión Bash
 	TSU Erick Carvajal R
 	Twitter: @neocarvajal
 	Correo: neocarvajal12@gmail.com              
 	Facebook: www.facebook.com/neocarvajal
+		Repositorio:
+		github.com/neocarvajal/TR10-TOOL
 
-== Colaboradores ==
+	* Versión Zenity
 	ING. Wuilmer Bolívar
 	Twitter: @WuilmerBolivar
 	Correo: el.wuilmer@gmail.com
 	Facebook: www.facebook.com/Wuilmer22
+		Repositorio: 
+		neocarvajal/TR10-TOOL/tree/environment
 
 == Agradecimientos ==
 	Team Win Recovery Project TWRP.
@@ -390,20 +414,20 @@ case $OPCION in
 	temporales para los dispositivos 
 	Dell Vennue 8 (CWM/TRWP).' >> /tmp/InfoTool.txt
 
-	zenity --ok-label="Aceptar" --height=660 --width=425 --text-info \
-	--title "Acerca de" --filename=/tmp/InfoTool.txt --checkbox='Comprendo!'
+	zenity --ok-label='Aceptar' --height=660 --width=425 --text-info \
+	--title 'Acerca de' --filename=/tmp/InfoTool.txt --checkbox='Comprendo!'
 			MenuPrincipal
 ;;
 
 9)
 	readme=`dirname $0`/README.md
-	zenity --ok-label="Aceptar" --text-info --height=400 --width=650 \
-	--title="Ayuda" --filename=$readme
+	zenity --ok-label='Aceptar' --text-info --height=400 --width=650 \
+	--title='Ayuda' --filename=$readme
 			MenuPrincipal
 ;;
 
 *)
-	zenity --info --text="Desconectando..."
+	zenity --info --text='Desconectando...'
 	exit
 ;;
 esac
