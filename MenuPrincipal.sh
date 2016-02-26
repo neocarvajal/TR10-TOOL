@@ -45,7 +45,7 @@ MenuPrincipal() {
 		"6" "Bypass Lock (Root)" \
 		"7" "Multiflash (Desarrollando)" \
 		"8" "Créditos" \
-		"9" "Ayuda")
+		"9" "Ayuda")		
  #fi
 #= = = = = = = = = = Función Opciones de la herramienta = = = = = = = = = =
 Opciones() {
@@ -60,7 +60,8 @@ case $OPCION in
 		"2" "ClockworkMod (CWM)" \
 		"3" "Regresar al menu") 
 
-	if [ $OPCION1 = 1 ]; then
+	if [ $OPCION1 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado TWRP como Recovery Temporal! ##'
@@ -100,7 +101,8 @@ case $OPCION in
 			MenuPrincipal
 	fi	
 
-	if [ $OPCION1 = 2 ]; then
+	if [ $OPCION1 -eq 2 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado CWM como Recovery Temporal! ##'
@@ -138,7 +140,7 @@ case $OPCION in
 			MenuPrincipal
 	fi	
 
-	if [ $OPCION1 = 3 ]; then
+	if [ $OPCION1 -eq 3 ]; then
 			MenuPrincipal
 	fi	
 ;; 
@@ -152,7 +154,8 @@ case $OPCION in
 		"1" "(TWRP Tactil) Root + Gapps" \
 		"2" "Regresar al menu")
 
-	if [ $OPCION2 = 1 ]; then
+	if [ $OPCION2 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado TWRP como Recovery Temporal! ##'
@@ -203,7 +206,7 @@ case $OPCION in
 			MenuPrincipal
 	fi
 
-	if [ $OPCION2 = 2 ]; then
+	if [ $OPCION2 -eq 2 ]; then
 			MenuPrincipal
 	fi
 ;;
@@ -217,7 +220,8 @@ case $OPCION in
 		"1" "Modo Droidboot/Fastboot" \
 		"2" "Regresar al menu")
 
-	if [ $OPCION3 = 1 ]; then
+	if [ $OPCION3 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado modo Droidboot/Fastboot! ##'
@@ -248,7 +252,8 @@ case $OPCION in
 		"1" "Reiniciar en modo Recovery (Nativo)" \
 		"2" "Regresar al menu")
 
-	if [ $OPCION4 = 1 ]; then
+	if [ $OPCION4 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado modo NATIVO! ##'
@@ -276,14 +281,14 @@ case $OPCION in
 		"1" "Entrar en el Shell" \
 		"2" "Regresar al menu")
 
-	if [ $OPCION5 = 1 ]; then
+	if [ $OPCION5 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Entrando a la SHELL! ##'
 		echo '' 
 		echo '->> Escribe 'exit' para salir'
         echo -e '\e[1;31m¡Diviértete!'
-
 		$ADB shell
 		echo ''
 		echo 'Presiona <ENTER> para continuar!'
@@ -306,7 +311,8 @@ case $OPCION in
 		"2" "Bypass Lock (PIN / CONTRASEÑA)" \
 		"3" "Regresar al menu")
 
-	if [ $OPCION6 = 1 ]; then
+	if [ $OPCION6 -eq 1 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado Bypass Lock (PATRÓN)! ##'
@@ -324,7 +330,8 @@ case $OPCION in
 			MenuPrincipal
 	fi	
 
-	if [ $OPCION6 = 2 ]; then
+	if [ $OPCION6 -eq 2 ]; then
+	# TRABAJAR CON LA VARIABLES DE ENTORNO (No todos los sistemas tienen gnome-terminal)
 	gnome-terminal --hide-menubar --geometry=70x30 \
 	-t "TR10-TOOL - TRABAJANDO" -e "bash -c \"
 		echo '## Seleccionado Bypass Lock por (PIN/CONTRASEÑA)! ##'
@@ -339,7 +346,7 @@ case $OPCION in
 			MenuPrincipal
 	fi	
 
-	if [ $OPCION6 = 3 ]; then
+	if [ $OPCION6 -eq 3 ]; then
 			MenuPrincipal
 	fi
 ;;	
@@ -357,23 +364,23 @@ case $OPCION in
 		"5" "Multi Apk Install" \
 		"6" "Regresar al menu")
 
-	if [ $OPCION7 = 1 ]; then
+	if [ $OPCION7 -eq 1 ]; then
 			MenuPrincipal
 	fi	
 
-	if [ $OPCION7 = 2 ]; then
+	if [ $OPCION7 -eq 2 ]; then
 			MenuPrincipal
 	fi	
-	if [ $OPCION7 = 3 ]; then
+	if [ $OPCION7 -eq 3 ]; then
 			MenuPrincipal
 	fi
-	if [ $OPCION7 = 4 ]; then
+	if [ $OPCION7 -eq 4 ]; then
 			MenuPrincipal
 	fi
-	if [ $OPCION7 = 5 ]; then
+	if [ $OPCION7 -eq 5 ]; then
 			MenuPrincipal
 	fi
-	if [ $OPCION7 = 6 ]; then
+	if [ $OPCION7 -eq 6 ]; then
 			MenuPrincipal
 	fi
 ;;	
@@ -387,7 +394,6 @@ case $OPCION in
 	del SDK Alone Tools, pensado para ser usado
 	en los modelos TR10CS1/TR10RS1 entregadas
 	por el estado venezolano.
-
 == Desarrolladores ==
 	* Versión Bash
 	TSU Erick Carvajal R
@@ -396,7 +402,6 @@ case $OPCION in
 	Facebook: www.facebook.com/neocarvajal
 		Repositorio:
 		github.com/neocarvajal/TR10-TOOL
-
 	* Versión Zenity
 	ING. Wuilmer Bolívar
 	Twitter: @WuilmerBolivar
@@ -404,11 +409,9 @@ case $OPCION in
 	Facebook: www.facebook.com/Wuilmer22
 		Repositorio: 
 		neocarvajal/TR10-TOOL/tree/environment
-
 == Agradecimientos ==
 	Team Win Recovery Project TWRP.
 	github/omnirom/android_bootable_recovery/
-
 	Usuario vampirefo de la comunidad XDA por 
 	el trabajo realizado con los recoverys 
 	temporales para los dispositivos 
@@ -435,3 +438,8 @@ esac
 	Opciones
 }
 MenuPrincipal
+
+    Status API Training Shop Blog About Pricing 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
+
