@@ -10,18 +10,24 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-function adb_globals() {
-	# Global SDK ------------------------------------------------------
-	DIR=$(pwd)
+function adb_globals {
+	# Global SDK ------------------------------------------------------	
+	# Almacenando ruta absoluta TR10TOOL
+	DIR="$(pwd)"
+	# Asignando binario (adb) a variable global
 	ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
+	# Asignando binario (fastboot) a variable global
 	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
+	# Variables de control
+	CONECTADO="device"
+	RECONEXION=1	
+	OPCION=0	
 }
 
-function conections_tr10_tool() {
+function conections_tr10_tool {
 	# Global Estate ---------------------------------------------------
-	ESTADO=`$ADB get-state`
-	CONECTADO="device"
-	SERIAL=`$ADB get-serialno`
-	RECONEXION=1
-	OPCION=0
+	# Almacenando estado de conexión de dispositivo vía adb
+	ESTADO=$($ADB get-state)
+	# Almacenando serial de dispositivo
+	SERIAL=$($ADB get-serialno)	
 }

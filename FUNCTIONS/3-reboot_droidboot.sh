@@ -10,22 +10,23 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reboot_droidboot() {	
+function reboot_droidboot {	
 	conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
-    echo "##################################################"
-    echo "           INFORMACIÓN DEL DISPOSITIVO           	"
-    echo "#                                                #"
-    echo "  Emparejado con Pc $HOSTNAME                     "                
-    echo "#                                                #"
-    echo "  Serial: $SERIAL								    "
-    echo "#                                                #"
-    echo "  `date`                                          "
-    echo "#                                                #"    
-    echo "##################################################"    
-    
+    echo "##############################################"
+    echo -e "\t\e[2;34;1mINFORMACIÓN DEL DISPOSITIVO\e[m"
+    echo "#                                            #"
+    echo "  Emparejado con Pc $HOSTNAME                 "
+    echo "#                                            #"
+    echo "  Serial: $SERIAL                             "
+    echo "#                                            #"
+    echo "  `date`                                      "
+    echo "#                                            #"
+    echo "##############################################"
+    echo " "    
+    max_conection
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo "  Entrar en modo Droidboot/Fastboot"
@@ -37,9 +38,9 @@ function reboot_droidboot() {
 
         if [ $opcion -eq 1 ]; then
         	echo " "
-         	read -t 2 -p "Reiniciando en modo Droidboot/Fastboot -- No toque el dispositivo "
+         	read -t 1 -p "Reiniciando en modo Droidboot/Fastboot -- No toque el dispositivo "
          	echo " "
-            $ADB reboot-bootloader && $FASTBOOT getvar all
+            $ADB reboot-bootloader
             echo " "
             clear
             echo " "
@@ -56,21 +57,17 @@ function reboot_droidboot() {
 
 	        if [ $opcionB -eq 1 ]; then
 		       	echo " "
-                read -t 2 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
+                read -t 1 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
                 echo " "
-	        	`$FASTBOOT continue`
+	        	$FASTBOOT continue
 	        	echo " "
                 echo "Cerrando conexiones ..."  
                 echo " "            
                 $ADB kill-server
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-                echo " "             
-                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
                 echo " "
-                echo "Escríbeme y te haré llegar la documentación necesaria"
-                echo " "
-                echo "Erick Carvajal R - @neocarvajal"
+                echo -e "\v \e[33;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             elif [ $opcionB -eq 2 ]; then
@@ -80,16 +77,13 @@ function reboot_droidboot() {
                 $ADB kill-server
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-                echo " "             
-                echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
                 echo " "
-                echo "Escribeme y te haré llegar la documentación necesaria"
-                echo " "
-                echo "Erick Carvajal R - @neocarvajal"
+                echo -e "\v \e[33;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             fi
 	    else
+            clear
 	    	echo "Regresando al Menú principal ..."
         fi
     else
@@ -97,7 +91,3 @@ function reboot_droidboot() {
     	main_menu
    	fi
 }
-	        
-
-
-

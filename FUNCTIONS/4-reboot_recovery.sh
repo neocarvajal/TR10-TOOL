@@ -10,22 +10,23 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reboot_native_recovery() {	
+function reboot_native_recovery {	
     conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
-    echo "##################################################"
-    echo "           INFORMACIÓN DEL DISPOSITIVO           	"
-    echo "#                                                #"
-    echo "  Emparejado con Pc $HOSTNAME                     "                
-    echo "#                                                #"
-    echo "  Serial: $SERIAL								    "
-    echo "#                                                #"
-    echo "  `date`                                          "
-    echo "#                                                #"    
-    echo "##################################################"
-    echo " "  
+    echo "##############################################"
+    echo -e "\t\e[2;34;1mINFORMACIÓN DEL DISPOSITIVO\e[m"
+    echo "#                                            #"
+    echo "  Emparejado con Pc $HOSTNAME                 "
+    echo "#                                            #"
+    echo "  Serial: $SERIAL                             "
+    echo "#                                            #"
+    echo "  `date`                                      "
+    echo "#                                            #"
+    echo "##############################################"
+    echo " "
+    max_conection
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo "  Entrar en modo Recovery (Nativo)"
@@ -37,7 +38,7 @@ function reboot_native_recovery() {
                         
         if [ $opcion -eq 1 ]; then
         	echo " "
-         	read -t 2 -p "Reiniciando en modo Recovery (Nativo) -- No toque el dispositivo "
+         	read -t 1 -p "Reiniciando en modo Recovery (Nativo) -- No toque el dispositivo "
          	echo " "
             $ADB reboot recovery 
             echo " "
@@ -48,16 +49,13 @@ function reboot_native_recovery() {
             read -p "Presione enter para salir ..."
             echo " "
         	clear
-	       	echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-            echo " "             
-            echo "Puedes colaborar con el desarrollo de una próxima versión con interfaz gráfica"
+            echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
             echo " "
-            echo "Escríbeme y te haré llegar la documentación necesaria"
-            echo " "
-            echo "Erick Carvajal R - @neocarvajal"
+            echo -e "\v \e[33;1mErick Carvajal R - @neocarvajal\e[m"
             echo " "
 	       	break	        
 	    else
+            clear
 	    	echo "Regresando al Menu principal ..."
         fi
     else

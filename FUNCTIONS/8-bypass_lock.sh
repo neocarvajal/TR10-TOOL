@@ -15,20 +15,21 @@
 # Date       : 12/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function bypass_lock() {
+function bypass_lock {
+    conections_tr10_tool
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
-    echo "##################################################"
-    echo "           INFORMACIÓN DEL DISPOSITIVO            "
-    echo "#                                                #"
-    echo "  Emparejado con Pc $HOSTNAME                     "                
-    echo "#                                                #"
-    echo "  Serial: $SERIAL                                 "
-    echo "#                                                #"
-    echo "  `date`                                          "
-    echo "#                                                #"    
-    echo "##################################################"
+    echo "##############################################"
+    echo -e "\t\e[2;34;1mINFORMACIÓN DEL DISPOSITIVO\e[m"
+    echo "#                                            #"
+    echo "  Emparejado con Pc $HOSTNAME                 "
+    echo "#                                            #"
+    echo "  Serial: $SERIAL                             "
+    echo "#                                            #"
+    echo "  `date`                                      "
+    echo "#                                            #"
+    echo "##############################################"
     echo " "  
     
     echo " "
@@ -38,9 +39,8 @@ function bypass_lock() {
     echo " 2 - Bypass Lock (PIN / CONTRASEÑA)"        
     echo " 3 - <-- MENU PRINCIPAL"
     echo "- - - - - - - - - - - - - - - - - - -"
-    read -p "Seleccione una opción: " opcion
-    conections_tr10_tool
-
+    read -p "Seleccione una opción: " opcion    
+    max_conection
      if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "

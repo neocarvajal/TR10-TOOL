@@ -10,22 +10,24 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function enter_shell() {
+function enter_shell {
     conections_tr10_tool
+    stream_device
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
-    echo "##################################################"
-    echo "           INFORMACIÓN DEL DISPOSITIVO            "
-    echo "#                                                #"
-    echo "  Emparejado con Pc $HOSTNAME                     "                
-    echo "#                                                #"
-    echo "  Serial: $SERIAL                                 "
-    echo "#                                                #"
-    echo "  `date`                                          "
-    echo "#                                                #"    
-    echo "##################################################"
-      
+    echo "##############################################"
+    echo -e "\t\e[2;34;1mINFORMACIÓN DEL DISPOSITIVO\e[m"
+    echo "#                                            #"
+    echo "  Emparejado con Pc $HOSTNAME                 "
+    echo "#                                            #"
+    echo "  Serial: $SERIAL                             "
+    echo "#                                            #"
+    echo "  `date`                                      "
+    echo "#                                            #"
+    echo "##############################################"
+    echo " "
+    max_conection  
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo " Seleccione una opción"
@@ -37,13 +39,14 @@ function enter_shell() {
         echo " "
 
         if [ $opcion -eq 1 ]; then
-	      	read -t 2 -p "Entrando en el shell"
+	      	read -t 2 -p "Entrando en el shell $STREAM_MODEL"
 	      	echo " "
-	      	echo " "
-	      	echo $DISPOSITIVO_FULL
-	      	echo " "
+	      	echo -e "\v \e[33;1m Cuando termine de trabajar puede salir con el comando (exit)
+            o haciendo la combinación (Ctrl +d) \e[m"
+            echo " "	      		      	
 	      	$ADB shell
 	    else
+            clear
 	    	echo "Regresando al Menú principal"
 	    fi
     else

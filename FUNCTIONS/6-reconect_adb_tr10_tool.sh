@@ -11,7 +11,7 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reconect_adb_tr10_tool() {	  
+function reconect_adb_tr10_tool {	  
     while [ $RECONEXION -ne 4 ]; do            
         echo " "
         echo "Imposible establer conexión con el dispositivo"
@@ -38,4 +38,18 @@ function reconect_adb_tr10_tool() {
     $ADB kill-server
     echo "Saliendo..."	
     exit
+}
+
+function max_conection {
+    stream_device
+     while [ $STREAM_DEVICES -ge 1 ]; do
+        clear
+        echo -e "\e[31;1m ***ERROR*** \e[m"
+        echo " "
+        echo -e "\e[31;1mSolo puede usar 1 dispositivo conectado en esta opción\e[m"
+        echo " "
+        echo -e "\e[2;34;1m Si desea trabajar con 2 o más equipos a la vez valla a Opciones Multiflash\e[m"
+        echo " "
+        exit        
+    done
 }
