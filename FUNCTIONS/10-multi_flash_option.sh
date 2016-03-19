@@ -1,15 +1,15 @@
 #!/bin/bash
 # multi_flash.sh
 #
-# Función que permite enviar los archivos Super SU (root) y las Gapps (Google Apps)
-# para luego entrar en recovery TWRP (touch) a más de un dispositivo !
+# Libreria que permite generar arreglo unidimencional de serial de dispositivos
+# y enviarlo por parametro según señal Multiflash asignada
 #
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 31/01/2016
+# Date       : 19/03/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function create_multi_device_array {
     stream_device

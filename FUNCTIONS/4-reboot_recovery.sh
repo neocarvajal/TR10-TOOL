@@ -1,13 +1,13 @@
 #!/bin/bash
 # reboot_droidboot.sh
 #
-# Función que permite reiniciar en modo Droidboot/Fastboot
+# Función que permite reiniciar en recovery nativo
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 03/12/2015
+# Date       : 19/03/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_native_recovery {	

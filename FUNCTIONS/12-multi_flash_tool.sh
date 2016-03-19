@@ -1,14 +1,14 @@
 #!/bin/bash
-# multiflash_tool.sh
+# 12-multiflash_tool.sh
 #
-# Función que permite Flasheo, Instalación Multiple 
+# Función que permite realizar operaciones de flasheo multiple
 #
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 02/01/2016
+# Date       : 19/03/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Global device info ----------------------------------------------
@@ -124,7 +124,7 @@ function multiflash_tool {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             elif [ $opcionB -eq 2 ]; then
@@ -137,7 +137,7 @@ function multiflash_tool {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             fi
@@ -337,7 +337,7 @@ function multiflash_tool {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             elif [ $opcionB -eq 2 ]; then
@@ -350,7 +350,7 @@ function multiflash_tool {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             fi
@@ -396,7 +396,7 @@ function multiflash_tool {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo "Desarrollado por: Erick Carvajal R - @neocarvajal"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             elif [ $opcionB -eq 2 ]; then
@@ -406,8 +406,8 @@ function multiflash_tool {
                 	$ADB kill-server
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
-                echo " "             
-                echo "Desarrollado por: Erick Carvajal R - @neocarvajal"
+                echo " "
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             fi         
@@ -422,8 +422,8 @@ function multiflash_tool {
         # ;;
 
        	*)
-            clear
-        	echo "Ha ocurrido un error interno"
+            clear            
+        	echo -e "\e[34;1mHa ocurrido un error interno\e[m"
             echo " "
             echo "pongase en contacto con el desarrollador"
             echo " "

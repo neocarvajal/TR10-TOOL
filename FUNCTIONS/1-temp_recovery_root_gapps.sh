@@ -5,11 +5,11 @@
 # para luego entrar en recovery TWRP (touch)
 #
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 03/12/2015
+# Date       : 19/03/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function temp_recovery_root_gapps {
@@ -114,7 +114,7 @@ function temp_recovery_root_gapps {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             elif [ $opcionB -eq 2 ]; then
@@ -125,7 +125,7 @@ function temp_recovery_root_gapps {
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
                 echo " "
-                echo -e "\e[33;1mErick Carvajal R - @neocarvajal\e[m"
+                echo -e "\e[34;1mErick Carvajal R - @neocarvajal\e[m"
                 echo " "
                 break
             fi

@@ -1,14 +1,15 @@
 #!/bin/bash
 # 11-stream-devices.sh
 #
-# 
-#
+# Función que permite generar un archivo log (DEVICES_CONECTED)
+# y ejecutar funciones de busqueda e inicializar variales globales
+# de información de dispositivos conectados
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# A TINY TR10 CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
+# A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 28/02/2016
+# Date       : 19/03/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function stream_device {
