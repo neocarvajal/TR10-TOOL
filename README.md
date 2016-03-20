@@ -99,5 +99,7 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 
 [Desarrollo]: https://gitter.im/neocarvajal/TR10-TOOL
 
+[@neocarvajal]: https://twitter.com/neocarvajal
+
 # Soporte/Contacto
-Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el chat de [Desarrollo][] y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
+Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el chat de [Desarrollo][] y adicionalmente puedes encontrarme en #Twitter como [@neocarvajal][]
