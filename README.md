@@ -97,5 +97,7 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 
 [vampirefo]: http://forum.xda-developers.com/search.php?searchid=397303595
 
+[Desarrollo]: https://gitter.im/neocarvajal/TR10-TOOL
+
 # Soporte/Contacto
-Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el foro : http://tabletcanaima.com.ve en la sección desarrollo y adicionalmente puedes encontrarme en #Twitter como @neocarvajal
+Para discusiones en cuanto al desarrollo y mejoras del script puedes visitar el [Chat para Desarrollo][] y adicionalmente puedes encontrarme en #Twitter como @neocarvajal

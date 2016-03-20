@@ -1,2 +1,0 @@
-model : 9271.1040.47
-date : thu sep 18 CST 2014
