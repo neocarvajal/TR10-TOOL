@@ -79,7 +79,7 @@ Copia y pega esta cadena en el archivo:
 5. Mientras no tengas las gapps no ejecutar la función 1 (no hay problemas solo mostrara 
 	el error de que no encuentra el fichero).
 
-# Video Guía (editando video nuevo...)
+# Video Guía
 https://www.youtube.com/watch?v=Cm7QASoZeWk
 
 # Desarrollador
@@ -94,6 +94,10 @@ Crear una herramienta con más opciones y mucho más universal como si se tratar
 [TWRP]: https://github.com/omnirom/android_bootable_recovery/
 
 2. Usuario [vampirefo][] miembro de la comunidad *XDA* por el trabajo realizado con los recovery's temporales para los dispositivos Dell Vennue 8 (CWM/TRWP). 
+
+3. Proyecto [OpenGapps][] 
+
+[OpenGapps]: http://opengapps.org/
 
 [vampirefo]: http://forum.xda-developers.com/search.php?searchid=397303595
 
