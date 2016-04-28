@@ -13,12 +13,12 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function create_multi_device_array {
     stream_device
-    #  ------------------------------------------------- 
+    #  -------------------------------------------------
     echo " "
     echo "Reconociendo dispositivos conectados -- No toque los dispositivos"
     echo " "
     echo "Generando archivo Log en el directorio D_LOG/"
-    echo " "        
+    echo " "
     ls -l D_LOG/
     echo " "
     echo "Realizando operaciónes necesarias sobre el archivo Log generado -- Espere"
@@ -26,12 +26,12 @@ function create_multi_device_array {
     # Lista de dispositivos conectados a TR10-TOOl
     separate="======================"
     echo "Lista de dispositivos detectados (MODEL)"
-    echo " " 
-    echo $separate $separate 
+    echo " "
+    echo $separate $separate
     sed '/List/d' D_LOG/DEVICES_CONECTED | sed '/^$/d' | awk '{print $5}' | cat -n
     echo " "
     echo "Lista de dispositivos detectados (SERIAL)"
-    echo " " 
+    echo " "
     sed '/List/d' D_LOG/DEVICES_CONECTED | sed '/^$/d' | awk '{print $1}' | cat -n
     echo $separate $separate
     echo " "
@@ -43,7 +43,7 @@ function create_multi_device_array {
         echo "Cantidad dispositivos detectados en el LOG : $STREAM_DEVICES"
         echo " "
         # Secuencia de numeros 1/cantidad de dispositivos en formato lista (sed)
-        for item in `seq $STREAM_DEVICES`; do 
+        for item in `seq $STREAM_DEVICES`; do
             # Asignando valor de dispositivo para 'sed'
             device="sed $item`echo 'd'`"
             # Asignando cambio de dispositivo para 'sed'
@@ -51,14 +51,14 @@ function create_multi_device_array {
             echo " "
             # Agreagar valores al arreglo de dispositivos
             flash_device_array=("${flash_device_array[*]}" " $flash_device")
-        done              
+        done
         echo "Dispositivos cargados ${flash_device_array[*]}"
-        echo " "       
+        echo " "
         # Flashtool con parametros para flasheo por Señal
         multiflash_tool $1 ${flash_device_array[*]}
         # Eliminando Log
         rm -rf D_LOG/DEVICES_CONECTED
-        # - - - - - - - - - - - - - - - - - - - - - - - - -           
+        # - - - - - - - - - - - - - - - - - - - - - - - - -
     else
         clear
         echo -e "\e[33;1m ***ERROR*** \e[m"
@@ -68,7 +68,7 @@ function create_multi_device_array {
 }
 
 function multi_flash_option {
-    stream_device    
+    stream_device
     clear
     echo " "
     echo " ¿Desea Empezar o Regresar?"
@@ -76,7 +76,7 @@ function multi_flash_option {
     echo " 1 - Multi Root and Gapps"
     echo " 2 - Multi Root"
     echo " 3 - Multi Gapps"
-    echo " 4 - Multi Droidboot"    
+    echo " 4 - Multi Droidboot"
     # echo " 5 - Multi Zip/Update"
     # echo " 6 - Multi Apk Install"
     echo " 5 - <-- MENÚ PRINCIPAL"

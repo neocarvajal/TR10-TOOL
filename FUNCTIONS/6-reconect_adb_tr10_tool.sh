@@ -11,8 +11,8 @@
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function reconect_adb_tr10_tool {	  
-    while [ $RECONEXION -ne 4 ]; do            
+function reconect_adb_tr10_tool {
+    while [ $RECONEXION -ne 4 ]; do
         echo " "
         echo "Imposible establer conexión con el dispositivo"
         echo " "
@@ -21,28 +21,28 @@ function reconect_adb_tr10_tool {
         echo "y la activación de la depuración USB "
         echo " "
         echo "Iniciando autodetección Nº $RECONEXION.."
-        echo " "            
-        $ADB wait-for-device 
-        echo " " 
-        conections_tr10_tool                      
+        echo " "
+        $ADB wait-for-device
+        echo " "
+        conections_tr10_tool
         if [ $ESTADO == $CONECTADO ]; then
             echo "Conexion reestablecida"
-            echo " "                                        
-            return             
+            echo " "
+            return
         elif [ $ESTADO != $CONECTADO ]; then
             let "RECONEXION++"
-        fi            
+        fi
     done
     echo "Imposible establecer conexión..."
-    echo " "   
+    echo " "
     $ADB kill-server
-    echo "Saliendo..."	
+    echo "Saliendo..."
     exit
 }
 
 function max_conection {
     stream_device
-     while [ $STREAM_DEVICES -ge 1 ]; do
+     while [ $STREAM_DEVICES != 1 ]; do
         clear
         echo -e "\e[31;1m ***ERROR*** \e[m"
         echo " "
@@ -50,6 +50,6 @@ function max_conection {
         echo " "
         echo -e "\e[2;34;1m Si desea trabajar con 2 o más equipos a la vez valla a Opciones Multiflash\e[m"
         echo " "
-        exit        
+        exit
     done
 }
