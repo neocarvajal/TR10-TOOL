@@ -27,4 +27,5 @@ function stream_device {
 	C_SIGNAL="400"
 	# K_SIGNAL="500"
 	# TEST_SIGNAL="600"
+	rm -rf D_LOG/D_LOG/DEVICES_CONECTED
 }

@@ -42,7 +42,7 @@ function reconect_adb_tr10_tool {
 
 function max_conection {
     stream_device
-     while [ $STREAM_DEVICES != 1 ]; do
+     while [ $STREAM_DEVICES -gt 1 ]; do
         clear
         echo -e "\e[31;1m ***ERROR*** \e[m"
         echo " "
