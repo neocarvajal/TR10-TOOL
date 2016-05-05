@@ -15,11 +15,11 @@
 function stream_device {
 	$ADB devices -l > D_LOG/DEVICES_CONECTED
 	# Variable de control
-	DEVICES_NO=0		
+	DEVICES_NO=0
 	# Cantidad de equipos conectados (num)
 	STREAM_DEVICES=`sed '/* /d' D_LOG/DEVICES_CONECTED | sed '/List/d' | sed '/^$/d' | awk '{print $1}' | wc -l`
 	# Modelo de dispositivo
-	STREAM_MODEL=`sed '/List/d' D_LOG/DEVICES_CONECTED | sed '/^$/d' | awk '{print $5}'`	
+	STREAM_MODEL=`sed '/List/d' D_LOG/DEVICES_CONECTED | sed '/^$/d' | awk '{print $5}'`
 	# MultiFlash Tool Signals
 	E_SIGNAL="100"
 	R_SIGNAL="200"

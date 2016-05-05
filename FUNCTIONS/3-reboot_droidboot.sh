@@ -31,10 +31,10 @@ function reboot_droidboot {
 	    echo " "
         echo "  Entrar en modo Droidboot/Fastboot"
         echo "- - - - - - - - - - - - - - - - - - -"
-        echo " 1 - Reiniciar en modo Droidboot/Fastboot"        
-        echo " 2 - <-- MENÚ PRINCIPAL"                
+        echo " 1 - Reiniciar en modo Droidboot/Fastboot"
+        echo " 2 - <-- MENÚ PRINCIPAL"
         echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion        
+        read -p "Seleccione una opción: " opcion
 
         if [ $opcion -eq 1 ]; then
         	echo " "
@@ -53,16 +53,15 @@ function reboot_droidboot {
             echo " 1 - Reiniciar el sistema normalmente"
             echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
-            read -p "Seleccione una opción: " opcionB        
-
+            read -p "Seleccione una opción: " opcionB
 	        if [ $opcionB -eq 1 ]; then
 		       	echo " "
                 read -t 1 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
                 echo " "
 	        	$FASTBOOT continue
 	        	echo " "
-                echo "Cerrando conexiones ..."  
-                echo " "            
+                echo "Cerrando conexiones ..."
+                echo " "
                 $ADB kill-server
                 clear
                 echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
