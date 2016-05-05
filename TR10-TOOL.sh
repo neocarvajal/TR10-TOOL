@@ -14,10 +14,11 @@
 # 
 clear
 # Variables Globales TR10-TOOL---------------------------------------
-. FUNCTIONS/7-conections_tr10_tool.sh
+. FUNCTIONS/7-conections_tr10_tool.sh            
 adb_globals
 # Cerrando servidor ADB---------------------------------------------
 echo "Cerrando conexiones ADB viejas ..."
+rm -rf D_LOG/*
 $ADB kill-server
 # Titulo -----------------------------------------------------------
 echo -e '\t \v \e[33;1m

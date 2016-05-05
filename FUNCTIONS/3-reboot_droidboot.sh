@@ -25,17 +25,17 @@ function reboot_droidboot {
     echo "  `date`                                      "
     echo "#                                            #"
     echo "##############################################"
-    echo " "    
+    echo " " 
+    
+    echo " "
+    echo "  Entrar en modo Droidboot/Fastboot"
+    echo "- - - - - - - - - - - - - - - - - - -"
+    echo " 1 - Reiniciar en modo Droidboot/Fastboot"
+    echo " 2 - <-- MENÚ PRINCIPAL"
+    echo "- - - - - - - - - - - - - - - - - - -"
+    read -p "Seleccione una opción: " opcion
     max_conection
     if [ $ESTADO == $CONECTADO ]; then
-	    echo " "
-        echo "  Entrar en modo Droidboot/Fastboot"
-        echo "- - - - - - - - - - - - - - - - - - -"
-        echo " 1 - Reiniciar en modo Droidboot/Fastboot"
-        echo " 2 - <-- MENÚ PRINCIPAL"
-        echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion
-
         if [ $opcion -eq 1 ]; then
         	echo " "
          	read -t 1 -p "Reiniciando en modo Droidboot/Fastboot -- No toque el dispositivo "
@@ -54,12 +54,12 @@ function reboot_droidboot {
             echo " 2 - <-- Salir (Reiniciare manualmente)"
             echo "- - - - - - - - - - - - - - - - - - -"
             read -p "Seleccione una opción: " opcionB
-	        if [ $opcionB -eq 1 ]; then
-		       	echo " "
+            if [ $opcionB -eq 1 ]; then
+    	       	echo " "
                 read -t 1 -p "Reiniciando el dispositivo en modo Normal -- No toque el dispositivo "
                 echo " "
-	        	$FASTBOOT continue
-	        	echo " "
+            	$FASTBOOT continue
+            	echo " "
                 echo "Cerrando conexiones ..."
                 echo " "
                 $ADB kill-server
@@ -81,9 +81,9 @@ function reboot_droidboot {
                 echo " "
                 break
             fi
-	    else
+        else
             clear
-	    	echo "Regresando al Menú principal ..."
+        	echo "Regresando al Menú principal ..."
         fi
     else
     	reconect_adb_tr10_tool
