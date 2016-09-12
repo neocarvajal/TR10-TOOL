@@ -13,7 +13,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function temp_recovery_root_gapps {
-    conections_tr10_tool
+
     clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -36,6 +36,7 @@ function temp_recovery_root_gapps {
     echo "- - - - - - - - - - - - - - - - - - - - - - - - -"
     read -p "Seleccione una opción: " opcion
     max_conection
+    conections_tr10_tool
     if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "

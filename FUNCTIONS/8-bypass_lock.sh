@@ -16,7 +16,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function bypass_lock {
-    conections_tr10_tool
+
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -41,6 +41,7 @@ function bypass_lock {
     echo "- - - - - - - - - - - - - - - - - - -"
     read -p "Seleccione una opción: " opcion    
     max_conection
+    conections_tr10_tool
      if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "

@@ -1,18 +1,18 @@
 #!/bin/bash
-# reboot_droidboot.sh
+# 13-prepare_for_tcpip.sh
 #
-# Función que permite reiniciar en recovery nativo
+# Función que permite ajustar propiedad en build.prop 
+# para realizar conexión adb vía wifi 
 #~ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # A TINY CLI TOOL FOR GNU/LINUX BASH VERSION 1.0.0
 #
 # Developer  : Erick Carvajal Rodriguez
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
-# Date       : 19/03/2016
+# Date       : 12/09/2016
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+function prepare_tcpip {
 
-function reboot_native_recovery {	
-
-	clear
+    clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
     echo "##############################################"
@@ -26,45 +26,46 @@ function reboot_native_recovery {
     echo "#                                            #"
     echo "##############################################"
     echo " "
+    
+    echo " ¿Desea Empezar o Regresar?"
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - "
+    echo " 1 - Preparar Conexión adb vía Wifi"
+    echo " 2 - <-- MENÚ PRINCIPAL"
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - -"
+    read -p "Seleccione una opción: " opcion
     max_conection
     conections_tr10_tool
     if [ $ESTADO == $CONECTADO ]; then
-	    echo " "
-        echo "  Entrar en modo Recovery (Nativo)"
-        echo "- - - - - - - - - - - - - - - - - - -"
-        echo " 1 - Reiniciar en modo Recovery (Nativo)"        
-        echo " 2 - <-- MENÚ PRINCIPAL"                
-        echo "- - - - - - - - - - - - - - - - - - -"
-        read -p "Seleccione una opción: " opcion       
-                        
         if [ $opcion -eq 1 ]; then
-        	echo " "
-         	read -t 1 -p "Reiniciando en modo Recovery (Nativo) -- No toque el dispositivo "
-         	echo " "
-            $ADB reboot recovery 
-            echo " "
-            echo "Una vez reiniciado el dispositivo presione la siguiente combinación 1 o 2 veces: " 
-            echo " "          
-            echo "Volumen Up + Volumen Down"
-            echo " "
-            read -p "Presione enter para salir ..."
-            echo " "
         	clear
-            echo "GRACIAS POR USAR ESTA HERRAMIENTA!!!"
             echo " "
-            echo -e "\v \e[33;1mErick Carvajal R - @neocarvajal\e[m"
+            read -t 1 -p "Iniciando configuración en build.prop"
             echo " "
-	       	break	        
-	    else
+            echo " "
+            $ADB shell getprop | grep tcp
+            echo " "
+            echo "Estableciendo puerto para conexión tcpip al 5555"
+            $ADB shell setprop service.adb.tcp.port 5555
+            echo " "
+            $ADB shell getprop | grep tcp
+            echo " "
+            read -p "Presione cualquier tecla para continuar..."   
+            echo " "
+            GET_IP="$($ADB shell getprop | grep ipaddress)"
+			IP="$(echo $GET_IP | awk '{print $2}')"
+			TCPIP_CONNECTION="adb connect ${IP}"
+			echo " "        
+			read -t 2 -p "Desde cualquier host adb use el siguiente comando : "
+			echo " "
+			echo -e '\e[33;1m '$TCPIP_CONNECTION' \e[m'
+			echo " "
+			break
+        else 
             clear
-	    	echo "Regresando al Menu principal ..."
+            echo "Regresando al menú principal"
         fi
     else
     	reconect_adb_tr10_tool
-    	main_menu
-   	fi
+        prepare_tcpip
+    fi
 }
-	        
-
-
-

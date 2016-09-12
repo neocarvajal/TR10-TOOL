@@ -12,7 +12,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function reboot_temp_recovery {
-    conections_tr10_tool
+
 	clear
     # Info Dispositivo  -------------------------------------------------
     echo " "
@@ -37,6 +37,7 @@ function reboot_temp_recovery {
     echo "- - - - - - - - - - - - - - - - - - -"
     read -p "Seleccione una opción: " opcion
     max_conection
+    conections_tr10_tool
     if [ $ESTADO == $CONECTADO ]; then
         if [ $opcion -eq 1 ]; then
             echo " "

@@ -11,7 +11,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function enter_shell {
-    conections_tr10_tool
+
     stream_device
 	clear
     # Info Dispositivo  -------------------------------------------------
@@ -27,7 +27,8 @@ function enter_shell {
     echo "#                                            #"
     echo "##############################################"
     echo " "
-    max_conection  
+    max_conection
+    conections_tr10_tool
     if [ $ESTADO == $CONECTADO ]; then
 	    echo " "
         echo " Seleccione una opción"

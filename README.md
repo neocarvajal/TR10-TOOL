@@ -17,6 +17,7 @@ Este script fue escrito en Bash para entornos Gnu/Linux usando la ultima versió
 5. - Entrar en el shell del dispositivo (Un pequeño gran mundo en tu dispositivo)
 6. - Bypass Lock 						(Desbloquear dispositivo por PIN/CONTRASEÑA/PATRÓN)
 7. - Opciones Multiflash				(Trabajar con varios dispositivos)
+8. - Conexión TCPIP 					(Preparar el dispositivo para adb vía wifi)
 
 
 # Pasos para utilizar la herramienta
@@ -85,10 +86,7 @@ Copia y pega esta cadena en el archivo:
 https://www.youtube.com/watch?v=Cm7QASoZeWk
 
 # Desarrollador
-T.S.U Erick Carvajal R. Estudiante universitario en la UPTOS "Clodosbaldo Russiían". Usuario Gnu/Linux desde 2009.
-
-# Meta
-Crear una herramienta con más opciones y mucho más universal como si se tratara de una "Suite" que permita gestionar diferentes dispositivos en tareas comunes fácilmente (respaldos, copiar archivos entre un pc y el dispositivo, entre otros), manteniendo las opciones "avanzadas" como flashear Temp Recovery
+Ing. Erick Carvajal R. Egresado de la UPTOS "Clodosbaldo Russiían". Usuario Gnu/Linux desde 2009.
 
 # Agradecimientos
 1. Team Win Recovery Project [TWRP][] (repositorio official).

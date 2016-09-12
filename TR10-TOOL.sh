@@ -14,6 +14,7 @@
 # 
 clear
 # Variables Globales TR10-TOOL---------------------------------------
+. FUNCTIONS/6-reconect_adb_tr10_tool.sh
 . FUNCTIONS/7-conections_tr10_tool.sh            
 adb_globals
 # Cerrando servidor ADB---------------------------------------------
@@ -38,19 +39,6 @@ $ADB start-server
 
 # Librerias TR10-TOOL------------------------------------------------
 . FUNCTIONS/0-main_menu.sh
-. FUNCTIONS/1-temp_recovery_root_gapps.sh
-. FUNCTIONS/2-reboot_temp_recovery.sh
-. FUNCTIONS/3-reboot_droidboot.sh
-. FUNCTIONS/4-reboot_recovery.sh
-. FUNCTIONS/5-enter_shell.sh
-. FUNCTIONS/6-reconect_adb_tr10_tool.sh
-. FUNCTIONS/8-bypass_lock.sh
-. FUNCTIONS/9-push_file.sh
-. FUNCTIONS/10-multi_flash_option.sh
-. FUNCTIONS/11-stream_devices.sh
-. FUNCTIONS/12-multi_flash_tool.sh
-
-
 # Alerta TR10-TOOL ------------------------------------------------
 echo " "
 echo "# - - - - - - - - - - - - - - - - - - - - - - - -#"
