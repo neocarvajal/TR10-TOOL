@@ -6,7 +6,7 @@
 # Información
 Esta rama sera utilizada para avanzar en la implementación de Zenity.
 
-# Dependencias:
+# Dependencias
 Para ejecutar sin problemas esta versión es necesario cumplir las siguientes:
 
   - Zenity: apt-get install zenity zenity-common (debian like)
