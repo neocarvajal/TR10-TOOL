@@ -16,5 +16,5 @@ Para ejecutar sin problemas esta versión es necesario cumplir las siguientes:
   - Menú principal
 ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/menu-tr10tool.png "TR10-TOOL MENU")
 
-  - Créditos
+  - Acerca de
 ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/creditos-tr10tool.png "TR10-TOOL CREDITOS")
