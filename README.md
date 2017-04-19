@@ -10,3 +10,11 @@ Esta rama sera utilizada para avanzar en la implementación de Zenity.
 Para ejecutar sin problemas esta versión es necesario cumplir las siguientes:
 
   - Zenity: apt-get install zenity zenity-common (debian like)
+
+# Interfaz
+
+  - Menú principal
+![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/menu-tr10tool.png "TR10-TOOL MENU")
+
+  - Créditos
+![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/creditos-tr10tool.png "TR10-TOOL CREDITOS")
