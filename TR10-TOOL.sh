@@ -29,7 +29,7 @@ fadb_globals
 #= = = = = = = = = = Barra de progreso = = = = = = = = = =
 ftiming | zenity --title=".: TR10-TOOL :."  \
 --no-cancel --progress --percentage=0 --auto-close \
---text="Herramienta desarrollada por TSU Erick Carvajal con fines educativos. 
+--text="Herramienta desarrollada por ing. Erick Carvajal con fines educativos. 
 \n Cada persona es responsable de su uso." 
 
 #= = = = = = = = = = Cerrando conexiones ADB viejas = = = = = = = = = =
@@ -48,7 +48,7 @@ fconections_tr10_tool
 
 #= = = = = = = = = = Verifica el estado de conexión = = = = = = = = = =
 #= = = = = = = = = = Si se conecta se conecta al menú = = = = = = = = = =
-if [ $ESTADO != 'devices' ]; then
+if [ $ESTADO != 'device' ]; then
 	bash MenuPrincipal.sh
 else
 	zenity --error --title="Notificación importante!" \
