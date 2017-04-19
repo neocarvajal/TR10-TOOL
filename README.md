@@ -13,8 +13,20 @@ Para ejecutar sin problemas esta versión es necesario cumplir las siguientes:
 
 # Interfaz
 
-  - Menú principal
+  - Inicio:
+
+![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/tr10tool.png "TR10-TOOL MENU")
+
+![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/inicio-tr10tool.png "TR10-TOOL MENU")
+
+---
+
+  - Menú principal:
+
 ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/menu-tr10tool.png "TR10-TOOL MENU")
 
-  - Acerca de
+---
+
+  - Acerca de:
+  
 ![by @neocarvajal](https://raw.githubusercontent.com/neocarvajal/TR10-TOOL/environment/IMAGES/creditos-tr10tool.png "TR10-TOOL CREDITOS")
