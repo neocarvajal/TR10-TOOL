@@ -396,7 +396,7 @@ case $OPCION in
 	por el estado venezolano.
 == Desarrolladores ==
 	* Versión Bash
-	TSU Erick Carvajal R
+	Ing Erick Carvajal R
 	Twitter: @neocarvajal
 	Correo: neocarvajal12@gmail.com              
 	Facebook: www.facebook.com/neocarvajal
@@ -441,5 +441,5 @@ MenuPrincipal
 
     Status API Training Shop Blog About Pricing 
 
-    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
+    © 2017 GitHub, Inc. Terms Privacy Security Contact Help 
 
