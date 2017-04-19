@@ -4,7 +4,9 @@
 [![Unirse a la conversación en https://gitter.im/neocarvajal/TR10-TOOL](https://badges.gitter.im/neocarvajal/TR10-TOOL.svg)](https://gitter.im/neocarvajal/TR10-TOOL)
 
 # Información
-Esta rama sera utilizada para avanzar en la implementación de Zenity.
+Esta rama sera utilizada para avanzar en la implementación de Zenity. Debe tener en cuenta que la versión más reciente se encuentra en la rama master, puede ver lo último en el siguiente enlace: [TR10TOOL][] (repositorio official) 
+
+[TR10TOOL]: https://github.com/neocarvajal/TR10-TOOL/tree/master
 
 # Dependencias
 Para ejecutar sin problemas esta versión es necesario cumplir las siguientes:
