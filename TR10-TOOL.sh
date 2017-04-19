@@ -29,7 +29,7 @@ fadb_globals
 #= = = = = = = = = = Barra de progreso = = = = = = = = = =
 ftiming | zenity --title=".: TR10-TOOL :."  \
 --no-cancel --progress --percentage=0 --auto-close \
---text="Herramienta desarrollada por ing. Erick Carvajal con fines educativos. 
+--text="Herramienta desarrollada por Ing. Erick Carvajal con fines educativos. 
 \n Cada persona es responsable de su uso." 
 
 #= = = = = = = = = = Cerrando conexiones ADB viejas = = = = = = = = = =

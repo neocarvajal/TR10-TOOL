@@ -403,7 +403,7 @@ case $OPCION in
 		Repositorio:
 		github.com/neocarvajal/TR10-TOOL
 	* Versión Zenity
-	ING. Wuilmer Bolívar
+	Ing. Wuilmer Bolívar
 	Twitter: @WuilmerBolivar
 	Correo: el.wuilmer@gmail.com
 	Facebook: www.facebook.com/Wuilmer22
