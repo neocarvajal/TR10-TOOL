@@ -15,9 +15,32 @@ function adb_globals {
 	# Almacenando ruta absoluta TR10TOOL
 	DIR="$(pwd)"
 	# Asignando binario (adb) a variable global
-	ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
+	#ADB="${DIR}/ANDROID-SDK-LINUX/./adb"
 	# Asignando binario (fastboot) a variable global
-	FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
+	#FASTBOOT="${DIR}/ANDROID-SDK-LINUX/./fastboot"
+	if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+		#LinuxOS
+		 # Asignando binario (adb) a variable global
+		 ADB="${DIR}/ANDROID-SDK-LINUX/platform-tools-linux/./adb"
+		 # Asignando binario (fastboot) a variable global
+		 FASTBOOT="${DIR}/ANDROID-SDK-LINUX/platform-tools-linux/./fastboot"
+		elif [[ "$OSTYPE" == "darwin"* ]]; then
+			#MacOSX
+			# Asignando binario (adb) a variable global
+			ADB="${DIR}/ANDROID-SDK-LINUX/platform-tools-mac/./adb"
+			# Asignando binario (fastboot) a variable global
+			FASTBOOT="${DIR}/ANDROID-SDK-LINUX/platform-tools-mac/./fastboot"
+		#elif [[ "$OSTYPE" == "cygwin" ]]; then
+			        # POSIX compatibility layer and Linux environment emulation for Windows
+		#elif [[ "$OSTYPE" == "msys" ]]; then
+			        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+		#elif [[ "$OSTYPE" == "win32" ]]; then
+			        # I'm not sure this can happen.
+		#elif [[ "$OSTYPE" == "freebsd"* ]]; then
+			        # ...
+		#else
+	        	# Unknown.
+	fi
 	# Variables de control
 	CONECTADO="device"
 	RECONEXION=1

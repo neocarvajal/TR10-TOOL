@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 #TR10-TOOL.sh
 #
 # Este script te ayudará en el proceso de rooteo de la Tablet TR10CS1 y TR10RS1
@@ -11,11 +11,11 @@
 # Contact    : http://twitter.com/neocarvajal && http://fb.com/neocarvajal
 # Date       : 03/12/2015
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# 
+#
 clear
 # Variables Globales TR10-TOOL---------------------------------------
 . FUNCTIONS/6-reconect_adb_tr10_tool.sh
-. FUNCTIONS/7-conections_tr10_tool.sh            
+. FUNCTIONS/7-conections_tr10_tool.sh
 adb_globals
 # Cerrando servidor ADB---------------------------------------------
 echo "Cerrando conexiones ADB viejas ..."
@@ -63,11 +63,11 @@ echo "# Esta herramienta fue desarrollada con fines    #"
 echo "# educativos, cada persona es responsable de su  #"
 echo "# uso.                                           #"
 echo "# - - - - - - - - - - - - - - - - - - - - - - - -#"
-echo "# Desarrollado por : T.S.U Erick Carvajal R      #"
+echo "# Desarrollado por :   Ing.Erick Carvajal R      #"
 echo "#                                                #"
 echo "# Nick: neocarvajal                              #"
 echo "#                                                #"
-echo "# Contacto: neocarvajal12@gmail.com              #"
+echo "# Contacto:   neocarvajal@gmail.com              #"
 echo "#                                                #"
 echo "# Redes: @neocarvajal on #Twitter and #Facebook  #"
 echo "#                                                #"
